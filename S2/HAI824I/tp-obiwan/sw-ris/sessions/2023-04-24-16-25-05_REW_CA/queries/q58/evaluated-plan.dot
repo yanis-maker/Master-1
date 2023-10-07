@@ -1,0 +1,17 @@
+digraph  g{ graph[label = "16:28:37.499"]
+node [shape=rectangle, color=black, fontcolor=black, style=bold] edge [color=black] 0 [label="BindAccessEval", color = yellow] ; 
+1 [label="SQLQuery
+SELECT nconst, tconst 
+FROM casting 
+WHERE category = 'actor' 
+UNION
+SELECT nconst, tconst 
+FROM casting 
+WHERE category = 'actress'
+37", color = yellow] ; 
+0 -> 1 ; 
+2 [label="FunctionCallBindAccess
+(<http://www.imdb.com/name/{0}>, <http://www.imdb.com/title/{1}>)", color = yellow] ; 
+0 -> 2 ; 
+}
+

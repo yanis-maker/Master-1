@@ -1,0 +1,8 @@
+ANS($movie,$title,$year) : [V_appearence\4($title,$movie,X1462404434126,X1462404434125), V_title\3(X1462404434131,$year,$movie)]
+
+ANS($movie,$title,$year) : [V_actress\4($title,X1462404434152,$movie,X1462404434154), V_title\3(X1462404434131,$year,$movie)]
+
+ANS($movie,$title,$year) : [V_title\3($title,X1462404434138,$movie), V_title\3(X1462404434131,$year,$movie)]
+
+ANS($movie,$title,$year) : [V_actor\4($title,X1462404434145,$movie,X1462404434147), V_title\3(X1462404434131,$year,$movie)]
+

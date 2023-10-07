@@ -1,0 +1,19 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogSkolemFunctionCall
+(\"{0}\", <https://www.starwars.com/databank/{1}>)" , color = blue] ; 
+1 [label="LogDistinct" , color = blue] ; 
+0 -> 1 ; 
+2 [label="LogProj
+[0,1]" , color = blue] ; 
+1 -> 2 ; 
+3 [label="Join\n 1PREDICATE_EQUAL2 ", color = blue] ; 
+2 -> 3 ; 
+4 [label="LogSQLEval 
+SELECT tab_20.primaryName, tab_23.character FROM person AS tab_20, casting AS tab_21, person AS tab_22, casting AS tab_23 WHERE tab_21.category IN ('actor', 'actress') AND tab_23.category IN ('actor', 'actress') AND tab_20.nconst = tab_22.nconst", color = blue] ; 
+3 -> 4 ; 
+5 [label="LogSQLEval 
+SELECT character FROM vehicle WHERE vehicleType = 'starship'", color = blue] ; 
+3 -> 5 ; 
+}
+

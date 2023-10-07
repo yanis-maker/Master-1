@@ -1,0 +1,21 @@
+digraph  g{ graph[label = "15:28:39.1"]
+node [shape=rectangle, color=black, fontcolor=black, style=bold] edge [color=black] 0 [label="BindAccessEval", color = yellow] ; 
+1 [label="SQLQuery
+SELECT tab_67.primaryName, tab_70.primarytitle 
+FROM person AS tab_64, casting AS tab_65, casting AS tab_69, title AS tab_70, person AS tab_67, title AS tab_66, title AS tab_68 
+WHERE tab_68.tconst = tab_69.tconst AND tab_67.nconst = tab_69.nconst AND tab_69.category = 'actor' AND tab_66.tconst = tab_65.tconst AND tab_64.nconst = tab_65.nconst AND tab_65.category = 'actress' AND tab_67.nconst = tab_64.nconst AND tab_66.tconst = tab_70.tconst 
+UNION
+SELECT tab_80.primaryName, tab_83.primaryTitle 
+FROM person AS tab_84, casting AS tab_85, title AS tab_81, person AS tab_78, title AS tab_83, casting AS tab_79, title AS tab_77, person AS tab_80, casting AS tab_82 
+WHERE tab_81.tconst = tab_82.tconst AND tab_80.nconst = tab_82.nconst AND tab_82.category = 'actor' AND tab_77.tconst = tab_79.tconst AND tab_78.nconst = tab_79.nconst AND tab_79.category = 'actress' AND tab_80.nconst = tab_78.nconst AND tab_83.tconst = tab_85.tconst AND tab_84.nconst = tab_85.nconst AND tab_85.category = 'actor' AND tab_77.tconst = tab_83.tconst 
+UNION
+SELECT tab_51.primaryName, tab_57.primaryTitle 
+FROM person AS tab_53, person AS tab_51, casting AS tab_52, title AS tab_54, person AS tab_55, casting AS tab_56, title AS tab_49, casting AS tab_50, title AS tab_57 
+WHERE tab_49.tconst = tab_52.tconst AND tab_51.nconst = tab_52.nconst AND tab_52.category = 'actor' AND tab_54.tconst = tab_50.tconst AND tab_53.nconst = tab_50.nconst AND tab_50.category = 'actress' AND tab_51.nconst = tab_53.nconst AND tab_55.nconst = tab_56.nconst AND tab_57.tconst = tab_56.tconst AND tab_56.category IN ('actor', 'actress') AND tab_54.tconst = tab_57.tconst
+0", color = yellow] ; 
+0 -> 1 ; 
+2 [label="FunctionCallBindAccess
+(\"{0}\", \"{1}\")", color = yellow] ; 
+0 -> 2 ; 
+}
+

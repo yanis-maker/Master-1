@@ -1,0 +1,25 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogDistinct" , color = blue] ; 
+1 [label="Union", color = blue] ; 
+0 -> 1 ; 
+2 [label="LogProj
+[1,0]" , color = blue] ; 
+1 -> 2 ; 
+3 [label="LogSkolemFunctionCall
+(<http://www.imdb.com/title/{1}>, <http://www.imdb.com/name/{0}>)" , color = blue] ; 
+2 -> 3 ; 
+4 [label="LogSQLEval 
+select nconst, tconst from casting where category='actor'", color = blue] ; 
+3 -> 4 ; 
+6 [label="LogProj
+[1,0]" , color = blue] ; 
+1 -> 6 ; 
+7 [label="LogSkolemFunctionCall
+(<http://www.imdb.com/title/{1}>, <http://www.imdb.com/name/{0}>)" , color = blue] ; 
+6 -> 7 ; 
+8 [label="LogSQLEval 
+select nconst, tconst from casting where category='actress'", color = blue] ; 
+7 -> 8 ; 
+}
+

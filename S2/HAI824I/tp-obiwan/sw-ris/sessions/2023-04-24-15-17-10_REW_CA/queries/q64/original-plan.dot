@@ -1,0 +1,87 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogDistinct" , color = blue] ; 
+1 [label="Union", color = blue] ; 
+0 -> 1 ; 
+2 [label="LogProj
+[2,0]" , color = blue] ; 
+1 -> 2 ; 
+3 [label="Join\n [2PREDICATE_EQUAL5] ", color = blue] ; 
+2 -> 3 ; 
+4 [label="LogSkolemFunctionCall
+(\"{1}\", \"{2}\", <http://www.imdb.com/title/{0}>)" , color = blue] ; 
+3 -> 4 ; 
+5 [label="LogSQLEval 
+select tconst, primarytitle, startyear from title", color = blue] ; 
+4 -> 5 ; 
+6 [label="LogSel
+[[1PREDICATE_EQUAL\"\"1977\"\"]]" , color = blue] ; 
+3 -> 6 ; 
+7 [label="LogSkolemFunctionCall
+(\"{1}\", \"{2}\", <http://www.imdb.com/title/{0}>)" , color = blue] ; 
+6 -> 7 ; 
+8 [label="LogSQLEval 
+select tconst, primarytitle, startyear from title", color = blue] ; 
+7 -> 8 ; 
+10 [label="LogProj
+[2,0]" , color = blue] ; 
+1 -> 10 ; 
+11 [label="Join\n [2PREDICATE_EQUAL6] ", color = blue] ; 
+10 -> 11 ; 
+12 [label="LogSkolemFunctionCall
+(\"{3}\", \"{2}\", <http://www.imdb.com/title/{1}>, \"<http://www.imdb.com/name/{0}\")" , color = blue] ; 
+11 -> 12 ; 
+13 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actress'", color = blue] ; 
+12 -> 13 ; 
+14 [label="LogSel
+[[1PREDICATE_EQUAL\"\"1977\"\"]]" , color = blue] ; 
+11 -> 14 ; 
+15 [label="LogSkolemFunctionCall
+(\"{1}\", \"{2}\", <http://www.imdb.com/title/{0}>)" , color = blue] ; 
+14 -> 15 ; 
+16 [label="LogSQLEval 
+select tconst, primarytitle, startyear from title", color = blue] ; 
+15 -> 16 ; 
+18 [label="LogProj
+[1,0]" , color = blue] ; 
+1 -> 18 ; 
+19 [label="Join\n [1PREDICATE_EQUAL6] ", color = blue] ; 
+18 -> 19 ; 
+20 [label="LogSkolemFunctionCall
+(\"{3}\", <http://www.imdb.com/title/{2}>, \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+19 -> 20 ; 
+21 [label="LogSQLEval 
+select P.nconst, C.character, T.tconst, T.primaryTitle from person P, casting C, title T where P.nconst=C.nconst and T.tconst=C.tconst and C.category in ('actor','actress')", color = blue] ; 
+20 -> 21 ; 
+22 [label="LogSel
+[[1PREDICATE_EQUAL\"\"1977\"\"]]" , color = blue] ; 
+19 -> 22 ; 
+23 [label="LogSkolemFunctionCall
+(\"{1}\", \"{2}\", <http://www.imdb.com/title/{0}>)" , color = blue] ; 
+22 -> 23 ; 
+24 [label="LogSQLEval 
+select tconst, primarytitle, startyear from title", color = blue] ; 
+23 -> 24 ; 
+26 [label="LogProj
+[2,0]" , color = blue] ; 
+1 -> 26 ; 
+27 [label="Join\n [2PREDICATE_EQUAL6] ", color = blue] ; 
+26 -> 27 ; 
+28 [label="LogSkolemFunctionCall
+(\"{3}\", \"{2}\", <http://www.imdb.com/title/{1}>, \"<http://www.imdb.com/name/{0}\")" , color = blue] ; 
+27 -> 28 ; 
+29 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actor'", color = blue] ; 
+28 -> 29 ; 
+30 [label="LogSel
+[[1PREDICATE_EQUAL\"\"1977\"\"]]" , color = blue] ; 
+27 -> 30 ; 
+31 [label="LogSkolemFunctionCall
+(\"{1}\", \"{2}\", <http://www.imdb.com/title/{0}>)" , color = blue] ; 
+30 -> 31 ; 
+32 [label="LogSQLEval 
+select tconst, primarytitle, startyear from title", color = blue] ; 
+31 -> 32 ; 
+}
+

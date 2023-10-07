@@ -1,0 +1,4 @@
+ANS($actor,$movie) : [V_actress\2($movie,$actor)]
+
+ANS($actor,$movie) : [V_actor\2($movie,$actor)]
+

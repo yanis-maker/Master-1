@@ -1,0 +1,3 @@
+<$actor,$movie> :- 
+	triple($actor,<http://www.imdb.com/actorIn>,$movie),
+	triple($movie,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<http://www.imdb.com/Movie>);

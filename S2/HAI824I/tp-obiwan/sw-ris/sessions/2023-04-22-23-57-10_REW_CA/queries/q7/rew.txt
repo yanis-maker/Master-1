@@ -1,0 +1,12 @@
+ANS($name,$title) : [V_actress\4(X181043971426,$name,X181043971424,$actor), V_actress\4(X181043971432,X181043971433,$movie,$actor), V_actor\4($title,X181043971440,$movie,X181043971443)]
+
+ANS($name,$title) : [V_actor\4(X18104397149,$name,X181043971411,$actor), V_actress\4(X181043971432,X181043971433,$movie,$actor), V_actor\4($title,X181043971440,$movie,X181043971443)]
+
+ANS($name,$title) : [V_actor\4(X18104397149,$name,X181043971411,$actor), V_actress\4(X181043971432,X181043971433,$movie,$actor), V_title\3($title,X181043971449,$movie)]
+
+ANS($name,$title) : [V_actor\4(X18104397149,$name,X181043971411,$actor), V_actress\4(X181043971432,X181043971433,$movie,$actor), V_actress\4($title,X181043971417,$movie,X181043971416)]
+
+ANS($name,$title) : [V_actress\4(X181043971426,$name,X181043971424,$actor), V_actress\4(X181043971432,X181043971433,$movie,$actor), V_title\3($title,X181043971449,$movie)]
+
+ANS($name,$title) : [V_actress\4(X181043971426,$name,X181043971424,$actor), V_actress\4(X181043971432,X181043971433,$movie,$actor), V_actress\4($title,X181043971417,$movie,X181043971416)]
+

@@ -1,0 +1,9 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogSkolemFunctionCall
+(\"{0}\", \"{1}\")" , color = blue] ; 
+1 [label="LogSQLEval 
+SELECT tab_57.primaryName, tab_60.character FROM person AS tab_57, casting AS tab_58, person AS tab_59, title AS tab_56, casting AS tab_60 WHERE tab_56.tconst = tab_58.tconst AND tab_57.nconst = tab_58.nconst AND tab_58.category = 'actor' AND tab_59.nconst = tab_60.nconst AND tab_60.category IN ('actor', 'actress') AND tab_57.nconst = tab_59.nconst UNION SELECT tab_66.primaryName, tab_69.character FROM title AS tab_65, person AS tab_68, casting AS tab_69, person AS tab_66, casting AS tab_67 WHERE tab_65.tconst = tab_67.tconst AND tab_66.nconst = tab_67.nconst AND tab_67.category = 'actress' AND tab_68.nconst = tab_69.nconst AND tab_69.category IN ('actor', 'actress') AND tab_66.nconst = tab_68.nconst UNION SELECT tab_61.primaryName, tab_64.character FROM person AS tab_63, person AS tab_61, casting AS tab_64, casting AS tab_62 WHERE tab_61.nconst = tab_62.nconst AND tab_62.category IN ('actor', 'actress') AND tab_63.nconst = tab_64.nconst AND tab_64.category IN ('actor', 'actress') AND tab_61.nconst = tab_63.nconst", color = blue] ; 
+0 -> 1 ; 
+}
+

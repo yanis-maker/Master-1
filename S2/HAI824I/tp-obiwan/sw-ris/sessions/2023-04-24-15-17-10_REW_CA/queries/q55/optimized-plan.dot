@@ -1,0 +1,9 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogSkolemFunctionCall
+(<http://www.imdb.com/title/{0}>, \"{1}\")" , color = blue] ; 
+1 [label="LogSQLEval 
+SELECT tab_24.tconst, tab_24.primaryTitle FROM casting AS tab_26, title AS tab_27, person AS tab_25, title AS tab_24 WHERE tab_24.tconst = tab_26.tconst AND tab_25.nconst = tab_26.nconst AND tab_26.category = 'actress' AND tab_24.primaryTitle = tab_27.startyear AND tab_24.tconst = tab_27.tconst UNION SELECT tab_16.tconst, tab_16.primaryTitle FROM casting AS tab_15, title AS tab_16, person AS tab_14, title AS tab_17 WHERE tab_14.nconst = tab_15.nconst AND tab_16.tconst = tab_15.tconst AND tab_15.category IN ('actor', 'actress') AND tab_16.primaryTitle = tab_17.startyear AND tab_16.tconst = tab_17.tconst UNION SELECT tab_22.tconst, tab_22.primarytitle FROM title AS tab_23, title AS tab_22 WHERE tab_22.primarytitle = tab_23.startyear AND tab_22.tconst = tab_23.tconst UNION SELECT tab_18.tconst, tab_18.primaryTitle FROM title AS tab_21, casting AS tab_20, title AS tab_18, person AS tab_19 WHERE tab_18.tconst = tab_20.tconst AND tab_19.nconst = tab_20.nconst AND tab_20.category = 'actor' AND tab_18.primaryTitle = tab_21.startyear AND tab_18.tconst = tab_21.tconst", color = blue] ; 
+0 -> 1 ; 
+}
+

@@ -1,0 +1,3 @@
+<$actorName,$character> :- 
+	triple($actor,<http://www.imdb.com/fullName>,$actorName),
+	triple($actor,<http://www.imdb.com/plays>,$character);

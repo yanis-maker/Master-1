@@ -1,0 +1,26 @@
+<<https://www.starwars.com/databank/uses>> :- 
+	triple($x,<https://www.starwars.com/databank/usesWeapon>,$z);
+
+<<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>> :- 
+	triple($x,<https://www.starwars.com/databank/usesWeapon>,$FV_1);
+
+<<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>> :- 
+	triple($x,<https://www.starwars.com/databank/uses>,$FV_1);
+
+<$y> :- 
+	triple($x,$y,$z);
+
+<<https://www.starwars.com/databank/uses>> :- 
+	triple($x,<https://www.starwars.com/databank/pilotOf>,$z);
+
+<<http://www.w3.org/2000/01/rdf-schema#domain>> :- ;
+
+<<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>> :- 
+	triple($FV_0,<https://www.starwars.com/databank/pilotOf>,$x);
+
+<<http://www.w3.org/2000/01/rdf-schema#range>> :- ;
+
+<<http://www.w3.org/2000/01/rdf-schema#subClassOf>> :- ;
+
+<<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>> :- ;
+

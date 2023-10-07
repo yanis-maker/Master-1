@@ -1,0 +1,32 @@
+ANS(<https://www.starwars.com/databank/LightSaber>,<http://www.w3.org/2000/01/rdf-schema#subClassOf>,<https://www.starwars.com/databank/Object>) : []
+
+ANS(<https://www.starwars.com/databank/uses>,<http://www.w3.org/2000/01/rdf-schema#range>,<https://www.starwars.com/databank/Object>) : []
+
+ANS(<https://www.starwars.com/databank/StarShip>,<http://www.w3.org/2000/01/rdf-schema#subClassOf>,<https://www.starwars.com/databank/Object>) : []
+
+ANS($sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/Object>) : [V_jedi\2($sub,X9052150303)]
+
+ANS(<https://www.starwars.com/databank/Vehicle>,<http://www.w3.org/2000/01/rdf-schema#subClassOf>,<https://www.starwars.com/databank/Object>) : []
+
+ANS($sub,<https://www.starwars.com/databank/uses>,$obj) : [V_jedi\2($obj,$sub)]
+
+ANS(<https://www.starwars.com/databank/pilotOf>,<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>,<https://www.starwars.com/databank/uses>) : []
+
+ANS(<https://www.starwars.com/databank/usesWeapon>,<http://www.w3.org/2000/01/rdf-schema#range>,<https://www.starwars.com/databank/Object>) : []
+
+ANS(<https://www.starwars.com/databank/pilotOf>,<http://www.w3.org/2000/01/rdf-schema#range>,<https://www.starwars.com/databank/Object>) : []
+
+ANS(<https://www.starwars.com/databank/StarShip>,<http://www.w3.org/2000/01/rdf-schema#subClassOf>,<https://www.starwars.com/databank/Vehicle>) : []
+
+ANS(<https://www.starwars.com/databank/usesWeapon>,<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>,<https://www.starwars.com/databank/uses>) : []
+
+ANS(<https://www.starwars.com/databank/pilotOf>,<http://www.w3.org/2000/01/rdf-schema#range>,<https://www.starwars.com/databank/Vehicle>) : []
+
+ANS($sub,$pred,$obj) : [V_title\2($obj,$sub), =\2($pred,<http://www.imdb.com/title>)]
+
+ANS($sub,$pred,$obj) : [V_jedi\2($sub,X90521503028), =\2($pred,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>), =\2($obj,<https://www.starwars.com/databank/LightSaber>)]
+
+ANS($sub,$pred,$obj) : [V_person\2($obj,$sub), =\2($pred,<http://www.imdb.com/fullName>)]
+
+ANS($sub,$pred,$obj) : [V_jedi\2($obj,$sub), =\2($pred,<https://www.starwars.com/databank/usesWeapon>)]
+

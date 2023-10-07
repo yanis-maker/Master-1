@@ -1,0 +1,175 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogDistinct" , color = blue] ; 
+1 [label="Union", color = blue] ; 
+0 -> 1 ; 
+2 [label="LogProj
+[0,6]" , color = blue] ; 
+1 -> 2 ; 
+3 [label="Join\n [6PREDICATE_EQUAL9] ", color = blue] ; 
+2 -> 3 ; 
+4 [label="Join\n [2PREDICATE_EQUAL7] ", color = blue] ; 
+3 -> 4 ; 
+5 [label="LogSkolemFunctionCall
+(\"{2}\", \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+4 -> 5 ; 
+6 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+5 -> 6 ; 
+7 [label="LogSkolemFunctionCall
+(\"{4}\", \"{2}\", <http://www.imdb.com/title/{3}>, \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+4 -> 7 ; 
+8 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName, T.tconst, T.primaryTitle from person P, casting C, title T where P.nconst=C.nconst and T.tconst=C.tconst and C.category in ('actor','actress')", color = blue] ; 
+7 -> 8 ; 
+9 [label="LogSkolemFunctionCall
+(\"{2}\", \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+3 -> 9 ; 
+10 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+9 -> 10 ; 
+12 [label="LogProj
+[1,5]" , color = blue] ; 
+1 -> 12 ; 
+13 [label="Join\n [3PREDICATE_EQUAL6] ", color = blue] ; 
+12 -> 13 ; 
+14 [label="LogSkolemFunctionCall
+(\"{3}\", \"{2}\", <http://www.imdb.com/title/{1}>, \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+13 -> 14 ; 
+15 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actor'", color = blue] ; 
+14 -> 15 ; 
+16 [label="LogSkolemFunctionCall
+(\"{2}\", \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+13 -> 16 ; 
+17 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+16 -> 17 ; 
+19 [label="LogProj
+[1,7]" , color = blue] ; 
+1 -> 19 ; 
+20 [label="Join\n [7PREDICATE_EQUAL10] ", color = blue] ; 
+19 -> 20 ; 
+21 [label="Join\n [3PREDICATE_EQUAL8] ", color = blue] ; 
+20 -> 21 ; 
+22 [label="LogSkolemFunctionCall
+(\"{3}\", \"{2}\", <http://www.imdb.com/title/{1}>, \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+21 -> 22 ; 
+23 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actor'", color = blue] ; 
+22 -> 23 ; 
+24 [label="LogSkolemFunctionCall
+(\"{4}\", \"{2}\", <http://www.imdb.com/title/{3}>, \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+21 -> 24 ; 
+25 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName, T.tconst, T.primaryTitle from person P, casting C, title T where P.nconst=C.nconst and T.tconst=C.tconst and C.category in ('actor','actress')", color = blue] ; 
+24 -> 25 ; 
+26 [label="LogSkolemFunctionCall
+(\"{2}\", \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+20 -> 26 ; 
+27 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+26 -> 27 ; 
+29 [label="LogProj
+[1,8]" , color = blue] ; 
+1 -> 29 ; 
+30 [label="Join\n [8PREDICATE_EQUAL11] ", color = blue] ; 
+29 -> 30 ; 
+31 [label="Join\n [4PREDICATE_EQUAL9] ", color = blue] ; 
+30 -> 31 ; 
+32 [label="LogSkolemFunctionCall
+(\"{4}\", \"{2}\", <http://www.imdb.com/title/{3}>, \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+31 -> 32 ; 
+33 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName, T.tconst, T.primaryTitle from person P, casting C, title T where P.nconst=C.nconst and T.tconst=C.tconst and C.category in ('actor','actress')", color = blue] ; 
+32 -> 33 ; 
+34 [label="LogSkolemFunctionCall
+(\"{4}\", \"{2}\", <http://www.imdb.com/title/{3}>, \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+31 -> 34 ; 
+35 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName, T.tconst, T.primaryTitle from person P, casting C, title T where P.nconst=C.nconst and T.tconst=C.tconst and C.category in ('actor','actress')", color = blue] ; 
+34 -> 35 ; 
+36 [label="LogSkolemFunctionCall
+(\"{2}\", \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+30 -> 36 ; 
+37 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+36 -> 37 ; 
+39 [label="LogProj
+[0,4]" , color = blue] ; 
+1 -> 39 ; 
+40 [label="Join\n [2PREDICATE_EQUAL5] ", color = blue] ; 
+39 -> 40 ; 
+41 [label="LogSkolemFunctionCall
+(\"{2}\", \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+40 -> 41 ; 
+42 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+41 -> 42 ; 
+43 [label="LogSkolemFunctionCall
+(\"{2}\", \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+40 -> 43 ; 
+44 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+43 -> 44 ; 
+46 [label="LogProj
+[1,5]" , color = blue] ; 
+1 -> 46 ; 
+47 [label="Join\n [3PREDICATE_EQUAL6] ", color = blue] ; 
+46 -> 47 ; 
+48 [label="LogSkolemFunctionCall
+(\"{3}\", \"{2}\", <http://www.imdb.com/title/{1}>, \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+47 -> 48 ; 
+49 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actress'", color = blue] ; 
+48 -> 49 ; 
+50 [label="LogSkolemFunctionCall
+(\"{2}\", \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+47 -> 50 ; 
+51 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+50 -> 51 ; 
+53 [label="LogProj
+[1,7]" , color = blue] ; 
+1 -> 53 ; 
+54 [label="Join\n [7PREDICATE_EQUAL10] ", color = blue] ; 
+53 -> 54 ; 
+55 [label="Join\n [3PREDICATE_EQUAL8] ", color = blue] ; 
+54 -> 55 ; 
+56 [label="LogSkolemFunctionCall
+(\"{3}\", \"{2}\", <http://www.imdb.com/title/{1}>, \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+55 -> 56 ; 
+57 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actress'", color = blue] ; 
+56 -> 57 ; 
+58 [label="LogSkolemFunctionCall
+(\"{4}\", \"{2}\", <http://www.imdb.com/title/{3}>, \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+55 -> 58 ; 
+59 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName, T.tconst, T.primaryTitle from person P, casting C, title T where P.nconst=C.nconst and T.tconst=C.tconst and C.category in ('actor','actress')", color = blue] ; 
+58 -> 59 ; 
+60 [label="LogSkolemFunctionCall
+(\"{2}\", \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+54 -> 60 ; 
+61 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+60 -> 61 ; 
+63 [label="LogProj
+[1,6]" , color = blue] ; 
+1 -> 63 ; 
+64 [label="Join\n [4PREDICATE_EQUAL7] ", color = blue] ; 
+63 -> 64 ; 
+65 [label="LogSkolemFunctionCall
+(\"{4}\", \"{2}\", <http://www.imdb.com/title/{3}>, \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+64 -> 65 ; 
+66 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName, T.tconst, T.primaryTitle from person P, casting C, title T where P.nconst=C.nconst and T.tconst=C.tconst and C.category in ('actor','actress')", color = blue] ; 
+65 -> 66 ; 
+67 [label="LogSkolemFunctionCall
+(\"{2}\", \"{1}\", \"<http://www.imdb.com/person/{0}\")" , color = blue] ; 
+64 -> 67 ; 
+68 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+67 -> 68 ; 
+}
+

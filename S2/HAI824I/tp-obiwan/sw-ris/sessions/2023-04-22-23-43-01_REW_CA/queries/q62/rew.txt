@@ -1,0 +1,20 @@
+ANS($x,<https://www.starwars.com/databank/Object>) : [V_pilot\1($x), V_jedi\2(<https://www.starwars.com/databank/Object>,X1261783149133)]
+
+ANS($x,<https://www.starwars.com/databank/Object>) : [V_pilot2\1($x), V_jedi\2(<https://www.starwars.com/databank/Object>,X1261783149133)]
+
+ANS($x,$z) : [V_pilot2\1($x), V_jedi\2(<https://www.starwars.com/databank/LightSaber>,X1261783149177), =\2($z,<https://www.starwars.com/databank/LightSaber>)]
+
+ANS($x,$z) : [V_pilot\1($x), V_jedi\2(<https://www.starwars.com/databank/LightSaber>,X1261783149177), =\2($z,<https://www.starwars.com/databank/LightSaber>)]
+
+ANS($x,<https://www.starwars.com/databank/Character>) : [V_pilot2\1($x), V_pilot2\1(<https://www.starwars.com/databank/Character>)]
+
+ANS($x,<https://www.starwars.com/databank/Character>) : [V_pilot2\1($x), V_pilot\1(<https://www.starwars.com/databank/Character>)]
+
+ANS($x,<https://www.starwars.com/databank/Character>) : [V_pilot\1($x), V_pilot2\1(<https://www.starwars.com/databank/Character>)]
+
+ANS($x,<https://www.starwars.com/databank/Character>) : [V_pilot\1($x), V_pilot\1(<https://www.starwars.com/databank/Character>)]
+
+ANS($x,<https://www.starwars.com/databank/Character>) : [V_pilot\1($x), V_jedi\2($FV_4,<https://www.starwars.com/databank/Character>)]
+
+ANS($x,<https://www.starwars.com/databank/Character>) : [V_pilot2\1($x), V_jedi\2($FV_4,<https://www.starwars.com/databank/Character>)]
+

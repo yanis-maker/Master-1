@@ -1,0 +1,12 @@
+<$actor,$movie> :- 
+	triple($actor,<http://www.imdb.com/maleActorIn>,$movie),
+	triple($FV_8,<http://www.imdb.com/maleActorIn>,$movie);
+
+<$actor,$movie> :- 
+	triple($actor,<http://www.imdb.com/actorIn>,$movie),
+	triple($FV_6,<http://www.imdb.com/actorIn>,$movie);
+
+<$actor,$movie> :- 
+	triple($actor,<http://www.imdb.com/actressIn>,$movie),
+	triple($FV_7,<http://www.imdb.com/actressIn>,$movie);
+

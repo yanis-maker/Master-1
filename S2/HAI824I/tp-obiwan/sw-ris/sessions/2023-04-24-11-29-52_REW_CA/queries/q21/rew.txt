@@ -1,0 +1,52 @@
+ANS(<https://www.starwars.com/databank/uses>) : [V_jedi\2($z,$x)]
+
+ANS(<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) : [V_jedi\2($FV_1,$x)]
+
+ANS(<http://www.imdb.com/actorIn>) : [V_actor\4(X206577691287,X206577691285,$z,$x)]
+
+ANS($y) : [V_person\2($z,$x), =\2($y,<http://www.imdb.com/fullName>)]
+
+ANS($y) : [V_actor\4(X206577691302,X206577691303,$z,$x), =\2($y,<http://www.imdb.com/maleActorIn>)]
+
+ANS($y) : [V_title\3(X206577691382,$z,$x), =\2($y,<http://www.imdb.com/releaseYear>)]
+
+ANS($y) : [V_actress\4(X206577691346,X206577691347,$z,$x), =\2($y,<http://www.imdb.com/actressIn>)]
+
+ANS($y) : [V_actor\4($z,X206577691309,$x,X206577691311), =\2($y,<http://www.imdb.com/title>)]
+
+ANS($y) : [V_actress\4(X206577691339,$z,X206577691338,$x), =\2($y,<http://www.imdb.com/fullName>)]
+
+ANS($y) : [V_actor\4(X206577691293,$z,X206577691294,$x), =\2($y,<http://www.imdb.com/fullName>)]
+
+ANS($y) : [V_pilot2\1($x), =\2($y,<https://www.starwars.com/databank/pilotOf>)]
+
+ANS($y) : [V_jedi\2($z,$x), =\2($y,<https://www.starwars.com/databank/usesWeapon>)]
+
+ANS($y) : [V_play\3($z,X206577691315,$x), =\2($y,<http://www.imdb.com/fullName>)]
+
+ANS($y) : [V_pilot\1(X206577691361), =\2($y,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)]
+
+ANS($y) : [V_play\3(X206577691323,$z,$x), =\2($y,<http://www.imdb.com/plays>)]
+
+ANS($y) : [V_actress\4($z,X206577691353,$x,X206577691354), =\2($y,<http://www.imdb.com/title>)]
+
+ANS($y) : [V_pilot2\1(X206577691366), =\2($y,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)]
+
+ANS($y) : [V_pilot\1($x), =\2($y,<https://www.starwars.com/databank/pilotOf>)]
+
+ANS($y) : [V_title\3($z,X206577691375,$x), =\2($y,<http://www.imdb.com/title>)]
+
+ANS(<https://www.starwars.com/databank/uses>) : [V_pilot\1($x)]
+
+ANS(<https://www.starwars.com/databank/uses>) : [V_pilot2\1($x)]
+
+ANS(<http://www.w3.org/2000/01/rdf-schema#domain>) : []
+
+ANS(<http://www.imdb.com/actorIn>) : [V_actress\4(X206577691407,X206577691405,$z,$x)]
+
+ANS(<http://www.w3.org/2000/01/rdf-schema#range>) : []
+
+ANS(<http://www.w3.org/2000/01/rdf-schema#subClassOf>) : []
+
+ANS(<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>) : []
+

@@ -1,0 +1,9 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogSkolemFunctionCall
+(\"{0}\", \"{1}\")" , color = blue] ; 
+1 [label="LogSQLEval 
+SELECT tab_17.character, tab_19.primaryTitle FROM person AS tab_20, casting AS tab_21, title AS tab_19, person AS tab_16, title AS tab_18, casting AS tab_17 WHERE tab_16.nconst = tab_17.nconst AND tab_18.tconst = tab_17.tconst AND tab_17.category IN ('actor', 'actress') AND tab_19.tconst = tab_21.tconst AND tab_20.nconst = tab_21.nconst AND tab_21.category = 'actress' AND tab_18.tconst = tab_19.tconst UNION SELECT tab_11.character, tab_15.primaryTitle FROM casting AS tab_11, person AS tab_13, casting AS tab_14, person AS tab_10, title AS tab_15, title AS tab_12 WHERE tab_10.nconst = tab_11.nconst AND tab_12.tconst = tab_11.tconst AND tab_11.category IN ('actor', 'actress') AND tab_13.nconst = tab_14.nconst AND tab_15.tconst = tab_14.tconst AND tab_14.category IN ('actor', 'actress') AND tab_12.tconst = tab_15.tconst UNION SELECT tab_1.character, tab_3.primaryTitle FROM casting AS tab_1, title AS tab_3, title AS tab_2, person AS tab_0, person AS tab_4, casting AS tab_5 WHERE tab_0.nconst = tab_1.nconst AND tab_2.tconst = tab_1.tconst AND tab_1.category IN ('actor', 'actress') AND tab_3.tconst = tab_5.tconst AND tab_4.nconst = tab_5.nconst AND tab_5.category = 'actor' AND tab_2.tconst = tab_3.tconst UNION SELECT tab_7.character, tab_9.primarytitle FROM person AS tab_6, title AS tab_9, title AS tab_8, casting AS tab_7 WHERE tab_6.nconst = tab_7.nconst AND tab_8.tconst = tab_7.tconst AND tab_7.category IN ('actor', 'actress') AND tab_8.tconst = tab_9.tconst", color = blue] ; 
+0 -> 1 ; 
+}
+

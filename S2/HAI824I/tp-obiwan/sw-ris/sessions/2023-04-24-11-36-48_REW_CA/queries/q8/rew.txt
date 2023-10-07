@@ -1,0 +1,48 @@
+ANS(<https://www.starwars.com/databank/uses>) : [V_jedi\2($z,$x)]
+
+ANS(<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>) : [V_jedi\2($FV_1,$x)]
+
+ANS($y) : [V_play\3($z,X17312745037,$x), =\2($y,<http://www.imdb.com/fullName>)]
+
+ANS($y) : [V_jedi\2($z,$x), =\2($y,<https://www.starwars.com/databank/usesWeapon>)]
+
+ANS($y) : [V_actress\4(X17312745065,X17312745064,$z,$x), =\2($y,<http://www.imdb.com/actressIn>)]
+
+ANS($y) : [V_title\3(X173127450102,$z,$x), =\2($y,<http://www.imdb.com/releaseYear>)]
+
+ANS($y) : [V_person\2($z,$x), =\2($y,<http://www.imdb.com/fullName>)]
+
+ANS($y) : [V_actor\4($z,X17312745028,$x,X17312745030), =\2($y,<http://www.imdb.com/title>)]
+
+ANS($y) : [V_actress\4(X17312745056,$z,X17312745057,$x), =\2($y,<http://www.imdb.com/fullName>)]
+
+ANS($y) : [V_pilot2\1($x), =\2($y,<https://www.starwars.com/databank/pilotOf>)]
+
+ANS($y) : [V_actor\4(X17312745020,X17312745022,$z,$x), =\2($y,<http://www.imdb.com/maleActorIn>)]
+
+ANS($y) : [V_pilot2\1(X17312745087), =\2($y,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)]
+
+ANS($y) : [V_actor\4(X17312745013,$z,X17312745014,$x), =\2($y,<http://www.imdb.com/fullName>)]
+
+ANS($y) : [V_pilot\1(X17312745080), =\2($y,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)]
+
+ANS($y) : [V_play\3(X17312745041,$z,$x), =\2($y,<http://www.imdb.com/plays>)]
+
+ANS($y) : [V_title\3($z,X17312745097,$x), =\2($y,<http://www.imdb.com/title>)]
+
+ANS($y) : [V_pilot\1($x), =\2($y,<https://www.starwars.com/databank/pilotOf>)]
+
+ANS($y) : [V_actress\4($z,X17312745072,$x,X17312745075), =\2($y,<http://www.imdb.com/title>)]
+
+ANS(<https://www.starwars.com/databank/uses>) : [V_pilot2\1($x)]
+
+ANS(<https://www.starwars.com/databank/uses>) : [V_pilot\1($x)]
+
+ANS(<http://www.w3.org/2000/01/rdf-schema#domain>) : []
+
+ANS(<http://www.w3.org/2000/01/rdf-schema#range>) : []
+
+ANS(<http://www.w3.org/2000/01/rdf-schema#subClassOf>) : []
+
+ANS(<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>) : []
+

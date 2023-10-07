@@ -1,0 +1,13 @@
+digraph  g{ graph[label = "15:56:6.577"]
+node [shape=rectangle, color=black, fontcolor=black, style=bold] edge [color=black] 0 [label="BindAccessEval", color = yellow] ; 
+1 [label="SQLQuery
+SELECT DISTINCT tab_5.primaryName 
+FROM person AS tab_5, casting AS tab_7, casting AS tab_6, title AS tab_4 
+WHERE tab_4.tconst = tab_6.tconst AND tab_5.nconst = tab_6.nconst AND tab_6.category = 'actress' AND tab_7.category = 'actor' AND tab_5.nconst = tab_7.nconst
+0", color = yellow] ; 
+0 -> 1 ; 
+2 [label="FunctionCallBindAccess
+(\"{0}\")", color = yellow] ; 
+0 -> 2 ; 
+}
+

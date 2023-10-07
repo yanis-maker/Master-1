@@ -1,0 +1,9 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogSkolemFunctionCall
+(<http://www.imdb.com/title/{0}>, \"{1}\")" , color = blue] ; 
+1 [label="LogSQLEval 
+SELECT tab_94.tconst, tab_94.primaryTitle FROM person AS tab_95, casting AS tab_96, title AS tab_97, title AS tab_94 WHERE tab_94.tconst = tab_96.tconst AND tab_95.nconst = tab_96.nconst AND tab_96.category = 'actor' AND tab_97.startyear = '1977' AND tab_94.tconst = tab_97.tconst UNION SELECT tab_86.tconst, tab_86.primaryTitle FROM person AS tab_84, casting AS tab_85, title AS tab_87, title AS tab_86 WHERE tab_84.nconst = tab_85.nconst AND tab_86.tconst = tab_85.tconst AND tab_85.category IN ('actor', 'actress') AND tab_87.startyear = '1977' AND tab_86.tconst = tab_87.tconst UNION SELECT tab_88.tconst, tab_88.primaryTitle FROM person AS tab_89, title AS tab_91, casting AS tab_90, title AS tab_88 WHERE tab_88.tconst = tab_90.tconst AND tab_89.nconst = tab_90.nconst AND tab_90.category = 'actress' AND tab_91.startyear = '1977' AND tab_88.tconst = tab_91.tconst UNION SELECT tab_92.tconst, tab_92.primarytitle FROM title AS tab_92, title AS tab_93 WHERE tab_93.startyear = '1977' AND tab_92.tconst = tab_93.tconst", color = blue] ; 
+0 -> 1 ; 
+}
+

@@ -1,0 +1,25 @@
+digraph  g{ graph[label = "15:22:40.606"]
+node [shape=rectangle, color=black, fontcolor=black, style=bold] edge [color=black] 0 [label="BindAccessEval", color = yellow] ; 
+1 [label="SQLQuery
+SELECT tab_54.tconst, tab_54.primarytitle 
+FROM title AS tab_54, title AS tab_55 
+WHERE tab_55.startyear = '1977' AND tab_54.tconst = tab_55.tconst 
+UNION
+SELECT tab_42.tconst, tab_42.primaryTitle 
+FROM casting AS tab_44, title AS tab_42, person AS tab_43, title AS tab_45 
+WHERE tab_42.tconst = tab_44.tconst AND tab_43.nconst = tab_44.nconst AND tab_44.category = 'actor' AND tab_45.startyear = '1977' AND tab_42.tconst = tab_45.tconst 
+UNION
+SELECT tab_48.tconst, tab_48.primaryTitle 
+FROM person AS tab_46, casting AS tab_47, title AS tab_49, title AS tab_48 
+WHERE tab_46.nconst = tab_47.nconst AND tab_48.tconst = tab_47.tconst AND tab_47.category IN ('actor', 'actress') AND tab_49.startyear = '1977' AND tab_48.tconst = tab_49.tconst 
+UNION
+SELECT tab_50.tconst, tab_50.primaryTitle 
+FROM person AS tab_51, casting AS tab_52, title AS tab_53, title AS tab_50 
+WHERE tab_50.tconst = tab_52.tconst AND tab_51.nconst = tab_52.nconst AND tab_52.category = 'actress' AND tab_53.startyear = '1977' AND tab_50.tconst = tab_53.tconst
+1", color = yellow] ; 
+0 -> 1 ; 
+2 [label="FunctionCallBindAccess
+(<http://www.imdb.com/title/{0}>, \"{1}\")", color = yellow] ; 
+0 -> 2 ; 
+}
+

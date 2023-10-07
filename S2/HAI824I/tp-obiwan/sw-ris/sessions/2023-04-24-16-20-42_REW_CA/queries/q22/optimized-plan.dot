@@ -1,0 +1,9 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogSkolemFunctionCall
+(<https://www.starwars.com/databank/{0}>, \"{1}\")" , color = blue] ; 
+1 [label="LogSQLEval 
+SELECT tab_23.character, tab_24.primarytitle FROM casting AS tab_22, casting AS tab_23, title AS tab_24 WHERE tab_23.category IN ('actor', 'actress') AND tab_22.category = 'actor' AND tab_23.nconst = tab_22.nconst AND tab_22.tconst = tab_24.tconst UNION SELECT tab_27.character, tab_29.primarytitle FROM casting AS tab_27, title AS tab_29, casting AS tab_28 WHERE tab_27.category IN ('actor', 'actress') AND tab_28.category = 'actress' AND tab_27.nconst = tab_28.nconst AND tab_28.tconst = tab_29.tconst", color = blue] ; 
+0 -> 1 ; 
+}
+

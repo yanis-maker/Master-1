@@ -1,0 +1,9 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogSkolemFunctionCall
+(<http://www.imdb.com/name/{0}>, <http://www.imdb.com/title/{1}>)" , color = blue] ; 
+1 [label="LogSQLEval 
+SELECT nconst, tconst FROM casting WHERE category = 'actress' UNION SELECT nconst, tconst FROM casting WHERE category = 'actor'", color = blue] ; 
+0 -> 1 ; 
+}
+

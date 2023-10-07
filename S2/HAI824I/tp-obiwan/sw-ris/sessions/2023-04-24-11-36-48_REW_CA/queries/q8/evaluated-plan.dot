@@ -1,0 +1,320 @@
+digraph  g{ graph[label = "11:36:52.632"]
+node [shape=rectangle, color=black, fontcolor=black, style=bold] edge [color=black] 0 [label="HashDistinct", color = yellow] ; 
+1 [label="Union", color = yellow] ; 
+0 -> 1 ; 
+2 [label="BindAccessEval", color = yellow] ; 
+1 -> 2 ; 
+3 [label="Project
+[]", color = yellow] ; 
+2 -> 3 ; 
+4 [label="SQLQuery
+select character, saber 
+from lightsaber
+8", color = yellow] ; 
+3 -> 4 ; 
+5 [label="FunctionCallBindAccess
+AddConstant{0=(\"<https://www.starwars.com/databank/uses>\")}", color = yellow] ; 
+2 -> 5 ; 
+7 [label="BindAccessEval", color = yellow] ; 
+1 -> 7 ; 
+8 [label="Project
+[]", color = yellow] ; 
+7 -> 8 ; 
+9 [label="SQLQuery
+select character, saber 
+from lightsaber
+8", color = yellow] ; 
+8 -> 9 ; 
+10 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>\")}", color = yellow] ; 
+7 -> 10 ; 
+12 [label="BindAccessEval", color = yellow] ; 
+1 -> 12 ; 
+13 [label="Project
+[]", color = yellow] ; 
+12 -> 13 ; 
+14 [label="SQLQuery
+select P.nconst, C.character, P.primaryName 
+from person P, casting C 
+where P.nconst=C.nconst and C.category in ('actor','actress')
+38", color = yellow] ; 
+13 -> 14 ; 
+15 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/fullName>\")}", color = yellow] ; 
+12 -> 15 ; 
+17 [label="BindAccessEval", color = yellow] ; 
+1 -> 17 ; 
+18 [label="Project
+[]", color = yellow] ; 
+17 -> 18 ; 
+19 [label="SQLQuery
+select character, saber 
+from lightsaber
+8", color = yellow] ; 
+18 -> 19 ; 
+20 [label="FunctionCallBindAccess
+AddConstant{0=(\"<https://www.starwars.com/databank/usesWeapon>\")}", color = yellow] ; 
+17 -> 20 ; 
+22 [label="BindAccessEval", color = yellow] ; 
+1 -> 22 ; 
+23 [label="Project
+[]", color = yellow] ; 
+22 -> 23 ; 
+24 [label="SQLQuery
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle 
+from title T, person P, casting C 
+where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actress'
+12", color = yellow] ; 
+23 -> 24 ; 
+25 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/actressIn>\")}", color = yellow] ; 
+22 -> 25 ; 
+27 [label="BindAccessEval", color = yellow] ; 
+1 -> 27 ; 
+28 [label="Project
+[]", color = yellow] ; 
+27 -> 28 ; 
+29 [label="SQLQuery
+select tconst, primarytitle, startyear 
+from title
+10", color = yellow] ; 
+28 -> 29 ; 
+30 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/releaseYear>\")}", color = yellow] ; 
+27 -> 30 ; 
+32 [label="BindAccessEval", color = yellow] ; 
+1 -> 32 ; 
+33 [label="Project
+[]", color = yellow] ; 
+32 -> 33 ; 
+34 [label="SQLQuery
+select nconst, primaryName 
+from person
+24", color = yellow] ; 
+33 -> 34 ; 
+35 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/fullName>\")}", color = yellow] ; 
+32 -> 35 ; 
+37 [label="BindAccessEval", color = yellow] ; 
+1 -> 37 ; 
+38 [label="Project
+[]", color = yellow] ; 
+37 -> 38 ; 
+39 [label="SQLQuery
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle 
+from title T, person P, casting C 
+where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actor'
+26", color = yellow] ; 
+38 -> 39 ; 
+40 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/title>\")}", color = yellow] ; 
+37 -> 40 ; 
+42 [label="BindAccessEval", color = yellow] ; 
+1 -> 42 ; 
+43 [label="Project
+[]", color = yellow] ; 
+42 -> 43 ; 
+44 [label="SQLQuery
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle 
+from title T, person P, casting C 
+where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actress'
+12", color = yellow] ; 
+43 -> 44 ; 
+45 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/fullName>\")}", color = yellow] ; 
+42 -> 45 ; 
+47 [label="BindAccessEval", color = yellow] ; 
+1 -> 47 ; 
+48 [label="Project
+[]", color = yellow] ; 
+47 -> 48 ; 
+49 [label="SQLQuery
+select character 
+from vehicle 
+where vehicleType='podracer'
+1", color = yellow] ; 
+48 -> 49 ; 
+50 [label="FunctionCallBindAccess
+AddConstant{0=(\"<https://www.starwars.com/databank/pilotOf>\")}", color = yellow] ; 
+47 -> 50 ; 
+52 [label="BindAccessEval", color = yellow] ; 
+1 -> 52 ; 
+53 [label="Project
+[]", color = yellow] ; 
+52 -> 53 ; 
+54 [label="SQLQuery
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle 
+from title T, person P, casting C 
+where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actor'
+26", color = yellow] ; 
+53 -> 54 ; 
+55 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/maleActorIn>\")}", color = yellow] ; 
+52 -> 55 ; 
+57 [label="BindAccessEval", color = yellow] ; 
+1 -> 57 ; 
+58 [label="Project
+[]", color = yellow] ; 
+57 -> 58 ; 
+59 [label="SQLQuery
+select character 
+from vehicle 
+where vehicleType='podracer'
+1", color = yellow] ; 
+58 -> 59 ; 
+60 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>\")}", color = yellow] ; 
+57 -> 60 ; 
+62 [label="BindAccessEval", color = yellow] ; 
+1 -> 62 ; 
+63 [label="Project
+[]", color = yellow] ; 
+62 -> 63 ; 
+64 [label="SQLQuery
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle 
+from title T, person P, casting C 
+where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actor'
+26", color = yellow] ; 
+63 -> 64 ; 
+65 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/fullName>\")}", color = yellow] ; 
+62 -> 65 ; 
+67 [label="BindAccessEval", color = yellow] ; 
+1 -> 67 ; 
+68 [label="Project
+[]", color = yellow] ; 
+67 -> 68 ; 
+69 [label="SQLQuery
+select character 
+from vehicle 
+where vehicleType='starship'
+3", color = yellow] ; 
+68 -> 69 ; 
+70 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>\")}", color = yellow] ; 
+67 -> 70 ; 
+72 [label="BindAccessEval", color = yellow] ; 
+1 -> 72 ; 
+73 [label="Project
+[]", color = yellow] ; 
+72 -> 73 ; 
+74 [label="SQLQuery
+select P.nconst, C.character, P.primaryName 
+from person P, casting C 
+where P.nconst=C.nconst and C.category in ('actor','actress')
+38", color = yellow] ; 
+73 -> 74 ; 
+75 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/plays>\")}", color = yellow] ; 
+72 -> 75 ; 
+77 [label="BindAccessEval", color = yellow] ; 
+1 -> 77 ; 
+78 [label="Project
+[]", color = yellow] ; 
+77 -> 78 ; 
+79 [label="SQLQuery
+select tconst, primarytitle, startyear 
+from title
+10", color = yellow] ; 
+78 -> 79 ; 
+80 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/title>\")}", color = yellow] ; 
+77 -> 80 ; 
+82 [label="BindAccessEval", color = yellow] ; 
+1 -> 82 ; 
+83 [label="Project
+[]", color = yellow] ; 
+82 -> 83 ; 
+84 [label="SQLQuery
+select character 
+from vehicle 
+where vehicleType='starship'
+3", color = yellow] ; 
+83 -> 84 ; 
+85 [label="FunctionCallBindAccess
+AddConstant{0=(\"<https://www.starwars.com/databank/pilotOf>\")}", color = yellow] ; 
+82 -> 85 ; 
+87 [label="BindAccessEval", color = yellow] ; 
+1 -> 87 ; 
+88 [label="Project
+[]", color = yellow] ; 
+87 -> 88 ; 
+89 [label="SQLQuery
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle 
+from title T, person P, casting C 
+where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actress'
+12", color = yellow] ; 
+88 -> 89 ; 
+90 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.imdb.com/title>\")}", color = yellow] ; 
+87 -> 90 ; 
+92 [label="BindAccessEval", color = yellow] ; 
+1 -> 92 ; 
+93 [label="Project
+[]", color = yellow] ; 
+92 -> 93 ; 
+94 [label="SQLQuery
+select character 
+from vehicle 
+where vehicleType='podracer'
+1", color = yellow] ; 
+93 -> 94 ; 
+95 [label="FunctionCallBindAccess
+AddConstant{0=(\"<https://www.starwars.com/databank/uses>\")}", color = yellow] ; 
+92 -> 95 ; 
+97 [label="BindAccessEval", color = yellow] ; 
+1 -> 97 ; 
+98 [label="Project
+[]", color = yellow] ; 
+97 -> 98 ; 
+99 [label="SQLQuery
+select character 
+from vehicle 
+where vehicleType='starship'
+3", color = yellow] ; 
+98 -> 99 ; 
+100 [label="FunctionCallBindAccess
+AddConstant{0=(\"<https://www.starwars.com/databank/uses>\")}", color = yellow] ; 
+97 -> 100 ; 
+102 [label="BindAccessEval", color = yellow] ; 
+1 -> 102 ; 
+103 [label="Project
+[]", color = yellow] ; 
+102 -> 103 ; 
+104 [label="(80)"] ; 
+103 -> 104 ; 
+105 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.w3.org/2000/01/rdf-schema#domain>\")}", color = yellow] ; 
+102 -> 105 ; 
+107 [label="BindAccessEval", color = yellow] ; 
+1 -> 107 ; 
+108 [label="Project
+[]", color = yellow] ; 
+107 -> 108 ; 
+109 [label="(84)"] ; 
+108 -> 109 ; 
+110 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.w3.org/2000/01/rdf-schema#range>\")}", color = yellow] ; 
+107 -> 110 ; 
+112 [label="BindAccessEval", color = yellow] ; 
+1 -> 112 ; 
+113 [label="Project
+[]", color = yellow] ; 
+112 -> 113 ; 
+114 [label="(88)"] ; 
+113 -> 114 ; 
+115 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.w3.org/2000/01/rdf-schema#subClassOf>\")}", color = yellow] ; 
+112 -> 115 ; 
+117 [label="BindAccessEval", color = yellow] ; 
+1 -> 117 ; 
+118 [label="Project
+[]", color = yellow] ; 
+117 -> 118 ; 
+119 [label="(92)"] ; 
+118 -> 119 ; 
+120 [label="FunctionCallBindAccess
+AddConstant{0=(\"<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>\")}", color = yellow] ; 
+117 -> 120 ; 
+}
+

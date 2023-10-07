@@ -1,0 +1,18 @@
+<$name,$title> :- 
+	triple($actor,<http://www.imdb.com/actressIn>,$movie),
+	triple($actor,<http://www.imdb.com/fullName>,$name),
+	triple($movie,<http://www.imdb.com/title>,$title),
+	triple($FV_4,<http://www.imdb.com/actressIn>,$movie);
+
+<$name,$title> :- 
+	triple($actor,<http://www.imdb.com/actorIn>,$movie),
+	triple($actor,<http://www.imdb.com/fullName>,$name),
+	triple($movie,<http://www.imdb.com/title>,$title),
+	triple($FV_3,<http://www.imdb.com/actorIn>,$movie);
+
+<$name,$title> :- 
+	triple($actor,<http://www.imdb.com/maleActorIn>,$movie),
+	triple($actor,<http://www.imdb.com/fullName>,$name),
+	triple($movie,<http://www.imdb.com/title>,$title),
+	triple($FV_5,<http://www.imdb.com/maleActorIn>,$movie);
+

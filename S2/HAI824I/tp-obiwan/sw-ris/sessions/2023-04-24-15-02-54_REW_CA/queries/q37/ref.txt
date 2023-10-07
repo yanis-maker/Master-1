@@ -1,0 +1,4 @@
+<$x,$z> :- 
+	triple($x,<https://www.starwars.com/databank/pilotOf>,$z),
+	triple($FV_0,<https://www.starwars.com/databank/pilotOf>,$z);
+

@@ -1,0 +1,25 @@
+digraph  g{ graph[label = "15:0:53.409"]
+node [shape=rectangle, color=black, fontcolor=black, style=bold] edge [color=black] 0 [label="BindAccessEval", color = yellow] ; 
+1 [label="SQLQuery
+SELECT tab_33.character, tab_35.primaryTitle 
+FROM casting AS tab_33, casting AS tab_37, person AS tab_32, person AS tab_36, title AS tab_34, title AS tab_35 
+WHERE tab_32.nconst = tab_33.nconst AND tab_34.tconst = tab_33.tconst AND tab_33.category IN ('actor', 'actress') AND tab_35.tconst = tab_37.tconst AND tab_36.nconst = tab_37.nconst AND tab_37.category = 'actress' AND tab_34.tconst = tab_35.tconst 
+UNION
+SELECT tab_39.character, tab_41.primaryTitle 
+FROM title AS tab_41, person AS tab_42, casting AS tab_43, title AS tab_40, person AS tab_38, casting AS tab_39 
+WHERE tab_38.nconst = tab_39.nconst AND tab_40.tconst = tab_39.tconst AND tab_39.category IN ('actor', 'actress') AND tab_41.tconst = tab_43.tconst AND tab_42.nconst = tab_43.nconst AND tab_43.category = 'actor' AND tab_40.tconst = tab_41.tconst 
+UNION
+SELECT tab_23.character, tab_25.primarytitle 
+FROM person AS tab_22, casting AS tab_23, title AS tab_25, title AS tab_24 
+WHERE tab_22.nconst = tab_23.nconst AND tab_24.tconst = tab_23.tconst AND tab_23.category IN ('actor', 'actress') AND tab_24.tconst = tab_25.tconst 
+UNION
+SELECT tab_27.character, tab_31.primaryTitle 
+FROM casting AS tab_30, title AS tab_31, person AS tab_26, casting AS tab_27, title AS tab_28, person AS tab_29 
+WHERE tab_26.nconst = tab_27.nconst AND tab_28.tconst = tab_27.tconst AND tab_27.category IN ('actor', 'actress') AND tab_29.nconst = tab_30.nconst AND tab_31.tconst = tab_30.tconst AND tab_30.category IN ('actor', 'actress') AND tab_28.tconst = tab_31.tconst
+38", color = yellow] ; 
+0 -> 1 ; 
+2 [label="FunctionCallBindAccess
+(\"{0}\", \"{1}\")", color = yellow] ; 
+0 -> 2 ; 
+}
+

@@ -1,0 +1,21 @@
+digraph  g{ graph[label = "12:28:50.858"]
+node [shape=rectangle, color=black, fontcolor=black, style=bold] edge [color=black] 0 [label="BindAccessEval", color = yellow] ; 
+1 [label="SQLQuery
+SELECT tab_14.primaryName, tab_17.character 
+FROM casting AS tab_15, person AS tab_16, person AS tab_14, casting AS tab_17 
+WHERE tab_14.nconst = tab_15.nconst AND tab_15.category IN ('actor', 'actress') AND tab_16.nconst = tab_17.nconst AND tab_17.category IN ('actor', 'actress') AND tab_14.nconst = tab_16.nconst 
+UNION
+SELECT tab_19.primaryName, tab_22.character 
+FROM casting AS tab_22, casting AS tab_20, person AS tab_21, title AS tab_18, person AS tab_19 
+WHERE tab_18.tconst = tab_20.tconst AND tab_19.nconst = tab_20.nconst AND tab_20.category = 'actor' AND tab_21.nconst = tab_22.nconst AND tab_22.category IN ('actor', 'actress') AND tab_19.nconst = tab_21.nconst 
+UNION
+SELECT tab_24.primaryName, tab_27.character 
+FROM person AS tab_24, casting AS tab_25, person AS tab_26, casting AS tab_27, title AS tab_23 
+WHERE tab_23.tconst = tab_25.tconst AND tab_24.nconst = tab_25.nconst AND tab_25.category = 'actress' AND tab_26.nconst = tab_27.nconst AND tab_27.category IN ('actor', 'actress') AND tab_24.nconst = tab_26.nconst
+18", color = yellow] ; 
+0 -> 1 ; 
+2 [label="FunctionCallBindAccess
+(\"{0}\", \"{1}\")", color = yellow] ; 
+0 -> 2 ; 
+}
+

@@ -1,0 +1,10 @@
+ANS($x,<https://www.starwars.com/databank/Vehicle>) : [V_pilot\1($x)]
+
+ANS($x,<https://www.starwars.com/databank/Vehicle>) : [V_pilot2\1($x)]
+
+ANS($x,<https://www.starwars.com/databank/StarShip>) : [V_pilot\1($x)]
+
+ANS($x,<https://www.starwars.com/databank/LightSaber>) : [V_jedi\2($z,$x)]
+
+ANS($x,<https://www.starwars.com/databank/PodRacer>) : [V_pilot2\1($x)]
+

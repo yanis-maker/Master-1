@@ -1,0 +1,24 @@
+<$x,<https://www.starwars.com/databank/Object>> :- 
+	triple($x,<https://www.starwars.com/databank/pilotOf>,$y),
+	triple($FV_11,<https://www.starwars.com/databank/pilotOf>,$y);
+
+<$x,<https://www.starwars.com/databank/Character>> :- 
+	triple($x,<https://www.starwars.com/databank/pilotOf>,$y),
+	triple($y,<https://www.starwars.com/databank/uses>,$FV_9);
+
+<$x,<https://www.starwars.com/databank/Vehicle>> :- 
+	triple($x,<https://www.starwars.com/databank/pilotOf>,$y),
+	triple($FV_8,<https://www.starwars.com/databank/pilotOf>,$y);
+
+<$x,$z> :- 
+	triple($x,<https://www.starwars.com/databank/pilotOf>,$y),
+	triple($y,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,$z);
+
+<$x,<https://www.starwars.com/databank/Character>> :- 
+	triple($x,<https://www.starwars.com/databank/pilotOf>,$y),
+	triple($y,<https://www.starwars.com/databank/usesWeapon>,$FV_9);
+
+<$x,<https://www.starwars.com/databank/Character>> :- 
+	triple($x,<https://www.starwars.com/databank/pilotOf>,$y),
+	triple($y,<https://www.starwars.com/databank/pilotOf>,$FV_9);
+

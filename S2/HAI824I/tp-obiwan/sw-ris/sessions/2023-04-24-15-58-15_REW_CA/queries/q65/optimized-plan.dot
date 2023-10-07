@@ -1,0 +1,9 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogSkolemFunctionCall
+(\"{0}\")" , color = blue] ; 
+1 [label="LogSQLEval 
+SELECT DISTINCT tab_77.primaryName FROM title AS tab_76, person AS tab_77, casting AS tab_78, casting AS tab_79 WHERE tab_76.tconst = tab_78.tconst AND tab_77.nconst = tab_78.nconst AND tab_78.category = 'actress' AND tab_79.category = 'actor' AND tab_77.nconst = tab_79.nconst", color = blue] ; 
+0 -> 1 ; 
+}
+

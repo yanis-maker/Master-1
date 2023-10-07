@@ -1,0 +1,53 @@
+<<https://www.starwars.com/databank/LightSaber>,<http://www.w3.org/2000/01/rdf-schema#subClassOf>,<https://www.starwars.com/databank/Object>> :- ;
+
+<<https://www.starwars.com/databank/uses>,<http://www.w3.org/2000/01/rdf-schema#range>,<https://www.starwars.com/databank/Object>> :- ;
+
+<<https://www.starwars.com/databank/StarShip>,<http://www.w3.org/2000/01/rdf-schema#subClassOf>,<https://www.starwars.com/databank/Object>> :- ;
+
+<$sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/Object>> :- 
+	triple($sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/Vehicle>);
+
+<$sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/Object>> :- 
+	triple($sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/LightSaber>);
+
+<<https://www.starwars.com/databank/Vehicle>,<http://www.w3.org/2000/01/rdf-schema#subClassOf>,<https://www.starwars.com/databank/Object>> :- ;
+
+<$sub,<https://www.starwars.com/databank/uses>,$obj> :- 
+	triple($sub,<https://www.starwars.com/databank/usesWeapon>,$obj);
+
+<$sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/Vehicle>> :- 
+	triple($sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/StarShip>);
+
+<<https://www.starwars.com/databank/pilotOf>,<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>,<https://www.starwars.com/databank/uses>> :- ;
+
+<<https://www.starwars.com/databank/usesWeapon>,<http://www.w3.org/2000/01/rdf-schema#range>,<https://www.starwars.com/databank/Object>> :- ;
+
+<$sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/Object>> :- 
+	triple($FV_1,<https://www.starwars.com/databank/usesWeapon>,$sub);
+
+<$sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/Object>> :- 
+	triple($sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/StarShip>);
+
+<<https://www.starwars.com/databank/pilotOf>,<http://www.w3.org/2000/01/rdf-schema#range>,<https://www.starwars.com/databank/Object>> :- ;
+
+<<https://www.starwars.com/databank/StarShip>,<http://www.w3.org/2000/01/rdf-schema#subClassOf>,<https://www.starwars.com/databank/Vehicle>> :- ;
+
+<<https://www.starwars.com/databank/usesWeapon>,<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>,<https://www.starwars.com/databank/uses>> :- ;
+
+<<https://www.starwars.com/databank/pilotOf>,<http://www.w3.org/2000/01/rdf-schema#range>,<https://www.starwars.com/databank/Vehicle>> :- ;
+
+<$sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/Object>> :- 
+	triple($FV_1,<https://www.starwars.com/databank/uses>,$sub);
+
+<$sub,<https://www.starwars.com/databank/uses>,$obj> :- 
+	triple($sub,<https://www.starwars.com/databank/pilotOf>,$obj);
+
+<$sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/Vehicle>> :- 
+	triple($FV_0,<https://www.starwars.com/databank/pilotOf>,$sub);
+
+<$sub,<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>,<https://www.starwars.com/databank/Object>> :- 
+	triple($FV_2,<https://www.starwars.com/databank/pilotOf>,$sub);
+
+<$sub,$pred,$obj> :- 
+	triple($sub,$pred,$obj);
+

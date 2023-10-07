@@ -1,0 +1,3 @@
+<$name> :- 
+	triple($actor,<http://www.imdb.com/fullName>,$name),
+	triple($actor,<https://www.starwars.com/databank/maleActorIn>,$movie);

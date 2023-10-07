@@ -1,0 +1,32 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogSkolemFunctionCall
+(\"{0}\", <https://www.starwars.com/databank/{1}>)" , color = blue] ; 
+1 [label="LogDistinct" , color = blue] ; 
+0 -> 1 ; 
+2 [label="Union", color = blue] ; 
+1 -> 2 ; 
+3 [label="LogProj
+[0,1]" , color = blue] ; 
+2 -> 3 ; 
+4 [label="Join\n 1PREDICATE_EQUAL2 ", color = blue] ; 
+3 -> 4 ; 
+5 [label="LogSQLEval 
+SELECT tab_0.primaryName, tab_3.character FROM casting AS tab_1, person AS tab_0, person AS tab_2, casting AS tab_3 WHERE tab_0.nconst = tab_1.nconst AND tab_1.category IN ('actor', 'actress') AND tab_2.nconst = tab_3.nconst AND tab_3.category IN ('actor', 'actress') AND tab_0.nconst = tab_2.nconst", color = blue] ; 
+4 -> 5 ; 
+6 [label="LogSQLEval 
+SELECT character FROM vehicle WHERE vehicleType = 'starship'", color = blue] ; 
+4 -> 6 ; 
+8 [label="LogProj
+[1,2]" , color = blue] ; 
+2 -> 8 ; 
+9 [label="Join\n 0PREDICATE_EQUAL2 ", color = blue] ; 
+8 -> 9 ; 
+10 [label="LogSQLEval 
+SELECT character FROM vehicle WHERE vehicleType = 'starship'", color = blue] ; 
+9 -> 10 ; 
+11 [label="LogSQLEval 
+SELECT tab_4.primaryName, tab_6.character FROM person AS tab_5, casting AS tab_6, person AS tab_4 WHERE tab_5.nconst = tab_6.nconst AND tab_6.category IN ('actor', 'actress') AND tab_4.nconst = tab_5.nconst", color = blue] ; 
+9 -> 11 ; 
+}
+

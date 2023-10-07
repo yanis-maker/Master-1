@@ -1,0 +1,17 @@
+digraph  g{ graph[label = "16:20:45.771"]
+node [shape=rectangle, color=black, fontcolor=black, style=bold] edge [color=black] 0 [label="BindAccessEval", color = yellow] ; 
+1 [label="SQLQuery
+SELECT tab_23.character, tab_24.primarytitle 
+FROM casting AS tab_22, casting AS tab_23, title AS tab_24 
+WHERE tab_23.category IN ('actor', 'actress') AND tab_22.category = 'actor' AND tab_23.nconst = tab_22.nconst AND tab_22.tconst = tab_24.tconst 
+UNION
+SELECT tab_27.character, tab_29.primarytitle 
+FROM casting AS tab_27, title AS tab_29, casting AS tab_28 
+WHERE tab_27.category IN ('actor', 'actress') AND tab_28.category = 'actress' AND tab_27.nconst = tab_28.nconst AND tab_28.tconst = tab_29.tconst
+40", color = yellow] ; 
+0 -> 1 ; 
+2 [label="FunctionCallBindAccess
+(<https://www.starwars.com/databank/{0}>, \"{1}\")", color = yellow] ; 
+0 -> 2 ; 
+}
+

@@ -1,0 +1,4 @@
+ANS($actorName,$character) : [V_play\3($actorName,X433564461158,$actor), V_play\3(X433564461145,$character,$actor), V_pilot\1($character)]
+
+ANS($actorName,$character) : [V_person\2($actorName,$actor), V_play\3(X433564461145,$character,$actor), V_pilot\1($character)]
+

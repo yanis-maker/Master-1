@@ -1,0 +1,4 @@
+digraph  g{ graph[label = "23:48:27.2"]
+node [shape=rectangle, color=black, fontcolor=black, style=bold] edge [color=black] 0 [label="(0)"] ; 
+}
+

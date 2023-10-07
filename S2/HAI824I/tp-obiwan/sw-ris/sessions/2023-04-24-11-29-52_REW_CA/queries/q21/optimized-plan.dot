@@ -1,0 +1,241 @@
+digraph  g{
+node [shape=rectangle, color=black, fontcolor=black, style=bold]
+0 [label="LogDistinct" , color = blue] ; 
+1 [label="Union", color = blue] ; 
+0 -> 1 ; 
+2 [label="LogFunctionCall
+AddConstant{0=(\"<https://www.starwars.com/databank/uses>\")}" , color = blue] ; 
+1 -> 2 ; 
+3 [label="LogProj
+[]" , color = blue] ; 
+2 -> 3 ; 
+4 [label="LogSQLEval 
+select character, saber from lightsaber", color = blue] ; 
+3 -> 4 ; 
+6 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>\")}" , color = blue] ; 
+1 -> 6 ; 
+7 [label="LogProj
+[]" , color = blue] ; 
+6 -> 7 ; 
+8 [label="LogSQLEval 
+select character, saber from lightsaber", color = blue] ; 
+7 -> 8 ; 
+10 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/actorIn>\")}" , color = blue] ; 
+1 -> 10 ; 
+11 [label="LogProj
+[]" , color = blue] ; 
+10 -> 11 ; 
+12 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actor'", color = blue] ; 
+11 -> 12 ; 
+14 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/fullName>\")}" , color = blue] ; 
+1 -> 14 ; 
+15 [label="LogProj
+[]" , color = blue] ; 
+14 -> 15 ; 
+16 [label="LogSQLEval 
+select nconst, primaryName from person", color = blue] ; 
+15 -> 16 ; 
+18 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/maleActorIn>\")}" , color = blue] ; 
+1 -> 18 ; 
+19 [label="LogProj
+[]" , color = blue] ; 
+18 -> 19 ; 
+20 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actor'", color = blue] ; 
+19 -> 20 ; 
+22 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/releaseYear>\")}" , color = blue] ; 
+1 -> 22 ; 
+23 [label="LogProj
+[]" , color = blue] ; 
+22 -> 23 ; 
+24 [label="LogSQLEval 
+select tconst, primarytitle, startyear from title", color = blue] ; 
+23 -> 24 ; 
+26 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/actressIn>\")}" , color = blue] ; 
+1 -> 26 ; 
+27 [label="LogProj
+[]" , color = blue] ; 
+26 -> 27 ; 
+28 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actress'", color = blue] ; 
+27 -> 28 ; 
+30 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/title>\")}" , color = blue] ; 
+1 -> 30 ; 
+31 [label="LogProj
+[]" , color = blue] ; 
+30 -> 31 ; 
+32 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actor'", color = blue] ; 
+31 -> 32 ; 
+34 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/fullName>\")}" , color = blue] ; 
+1 -> 34 ; 
+35 [label="LogProj
+[]" , color = blue] ; 
+34 -> 35 ; 
+36 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actress'", color = blue] ; 
+35 -> 36 ; 
+38 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/fullName>\")}" , color = blue] ; 
+1 -> 38 ; 
+39 [label="LogProj
+[]" , color = blue] ; 
+38 -> 39 ; 
+40 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actor'", color = blue] ; 
+39 -> 40 ; 
+42 [label="LogFunctionCall
+AddConstant{0=(\"<https://www.starwars.com/databank/pilotOf>\")}" , color = blue] ; 
+1 -> 42 ; 
+43 [label="LogProj
+[]" , color = blue] ; 
+42 -> 43 ; 
+44 [label="LogSQLEval 
+select character from vehicle where vehicleType='podracer'", color = blue] ; 
+43 -> 44 ; 
+46 [label="LogFunctionCall
+AddConstant{0=(\"<https://www.starwars.com/databank/usesWeapon>\")}" , color = blue] ; 
+1 -> 46 ; 
+47 [label="LogProj
+[]" , color = blue] ; 
+46 -> 47 ; 
+48 [label="LogSQLEval 
+select character, saber from lightsaber", color = blue] ; 
+47 -> 48 ; 
+50 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/fullName>\")}" , color = blue] ; 
+1 -> 50 ; 
+51 [label="LogProj
+[]" , color = blue] ; 
+50 -> 51 ; 
+52 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+51 -> 52 ; 
+54 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>\")}" , color = blue] ; 
+1 -> 54 ; 
+55 [label="LogProj
+[]" , color = blue] ; 
+54 -> 55 ; 
+56 [label="LogSQLEval 
+select character from vehicle where vehicleType='starship'", color = blue] ; 
+55 -> 56 ; 
+58 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/plays>\")}" , color = blue] ; 
+1 -> 58 ; 
+59 [label="LogProj
+[]" , color = blue] ; 
+58 -> 59 ; 
+60 [label="LogSQLEval 
+select P.nconst, C.character, P.primaryName from person P, casting C where P.nconst=C.nconst and C.category in ('actor','actress')", color = blue] ; 
+59 -> 60 ; 
+62 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/title>\")}" , color = blue] ; 
+1 -> 62 ; 
+63 [label="LogProj
+[]" , color = blue] ; 
+62 -> 63 ; 
+64 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actress'", color = blue] ; 
+63 -> 64 ; 
+66 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>\")}" , color = blue] ; 
+1 -> 66 ; 
+67 [label="LogProj
+[]" , color = blue] ; 
+66 -> 67 ; 
+68 [label="LogSQLEval 
+select character from vehicle where vehicleType='podracer'", color = blue] ; 
+67 -> 68 ; 
+70 [label="LogFunctionCall
+AddConstant{0=(\"<https://www.starwars.com/databank/pilotOf>\")}" , color = blue] ; 
+1 -> 70 ; 
+71 [label="LogProj
+[]" , color = blue] ; 
+70 -> 71 ; 
+72 [label="LogSQLEval 
+select character from vehicle where vehicleType='starship'", color = blue] ; 
+71 -> 72 ; 
+74 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/title>\")}" , color = blue] ; 
+1 -> 74 ; 
+75 [label="LogProj
+[]" , color = blue] ; 
+74 -> 75 ; 
+76 [label="LogSQLEval 
+select tconst, primarytitle, startyear from title", color = blue] ; 
+75 -> 76 ; 
+78 [label="LogFunctionCall
+AddConstant{0=(\"<https://www.starwars.com/databank/uses>\")}" , color = blue] ; 
+1 -> 78 ; 
+79 [label="LogProj
+[]" , color = blue] ; 
+78 -> 79 ; 
+80 [label="LogSQLEval 
+select character from vehicle where vehicleType='starship'", color = blue] ; 
+79 -> 80 ; 
+82 [label="LogFunctionCall
+AddConstant{0=(\"<https://www.starwars.com/databank/uses>\")}" , color = blue] ; 
+1 -> 82 ; 
+83 [label="LogProj
+[]" , color = blue] ; 
+82 -> 83 ; 
+84 [label="LogSQLEval 
+select character from vehicle where vehicleType='podracer'", color = blue] ; 
+83 -> 84 ; 
+86 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.w3.org/2000/01/rdf-schema#domain>\")}" , color = blue] ; 
+1 -> 86 ; 
+87 [label="LogProj
+[]" , color = blue] ; 
+86 -> 87 ; 
+88 [label="null 
+null", color = blue] ; 
+87 -> 88 ; 
+90 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.imdb.com/actorIn>\")}" , color = blue] ; 
+1 -> 90 ; 
+91 [label="LogProj
+[]" , color = blue] ; 
+90 -> 91 ; 
+92 [label="LogSQLEval 
+select P.nconst, T.tconst, P.primaryName, T.primaryTitle from title T, person P, casting C where T.tconst=C.tconst and P.nconst=C.nconst and C.category='actress'", color = blue] ; 
+91 -> 92 ; 
+94 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.w3.org/2000/01/rdf-schema#range>\")}" , color = blue] ; 
+1 -> 94 ; 
+95 [label="LogProj
+[]" , color = blue] ; 
+94 -> 95 ; 
+96 [label="null 
+null", color = blue] ; 
+95 -> 96 ; 
+98 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.w3.org/2000/01/rdf-schema#subClassOf>\")}" , color = blue] ; 
+1 -> 98 ; 
+99 [label="LogProj
+[]" , color = blue] ; 
+98 -> 99 ; 
+100 [label="null 
+null", color = blue] ; 
+99 -> 100 ; 
+102 [label="LogFunctionCall
+AddConstant{0=(\"<http://www.w3.org/2000/01/rdf-schema#subPropertyOf>\")}" , color = blue] ; 
+1 -> 102 ; 
+103 [label="LogProj
+[]" , color = blue] ; 
+102 -> 103 ; 
+104 [label="null 
+null", color = blue] ; 
+103 -> 104 ; 
+}
+
