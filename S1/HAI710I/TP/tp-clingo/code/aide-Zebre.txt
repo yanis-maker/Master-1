@@ -1,0 +1,144 @@
+%% Voici un squelette pour le problème du zèbre
+%% Mais il y a d'autres façons de faire
+
+% BASE DE FAITS
+% There are five houses
+% On définit les 5 numéros de maison
+maison(1).
+maison(2).
+maison(3).
+maison(4).
+maison(5).
+% éventuellement d'autres phrases peuvent donner d'autres faits
+color(red;green;yellow;ivory;blue).
+boisson(coffe;tea;milk;og;water).
+animal(dog;snail;fox;horse;zebre).
+nationalite(eng,spa,ukr,nor,jap).
+marque(old,koo,che,luc,par).
+% BASE DE REGLES
+
+% L'idée est d'avoir 5 prédicats binaires liant une maison à ses propriétés : 
+% aCouleur(M,C), aBoisson(M,B), aAnimal(M,A), aNationalite(M,N), aMarque(M,C)
+
+% 1. Règles générant toutes les affectations possibles
+
+% Toute maison a une couleur parmi : red, green, blue, yellow ivory (5 règles)
+% A partir de la BF initiale, une seule règle peut s'appliquer pour un même numéro de maison
+% ceci génère 5^5 (5 puissance 5) nouveaux "mondes" où chacune des 5 maisons a une seule couleur
+
+aCouleur(MAISON, red) :- maison(MAISON), not aCouleur(MAISON, green), not aCouleur(MAISON, yellow), not aCouleur(MAISON, ivory), not aCouleur(MAISON, blue).
+aCouleur(MAISON, green) :- maison(MAISON), not aCouleur(MAISON, yellow), not aCouleur(MAISON, ivory), not aCouleur(MAISON, blue), not aCouleur(MAISON, red).
+aCouleur(MAISON, yellow) :- maison(MAISON), not aCouleur(MAISON, ivory), not aCouleur(MAISON, blue), not aCouleur(MAISON, red), not aCouleur(MAISON, green).
+aCouleur(MAISON, ivory) :- maison(MAISON), not aCouleur(MAISON, blue), not aCouleur(MAISON, red), not aCouleur(MAISON, green), not aCouleur(MAISON, yellow).
+aCouleur(MAISON, blue) :- maison(MAISON), not aCouleur(MAISON, red), not aCouleur(MAISON, green), not aCouleur(MAISON, yellow), not aCouleur(MAISON, ivory).
+
+% Même principe pour les boissons, les animaux, les nationalités et les marques
+aBoisson(MAISON, coffe) :- maison(MAISON), not aBoisson(MAISON, tea), not aBoisson(MAISON, milk), not aBoisson(MAISON,og), not aBoisson(MAISON, water).
+aBoisson(MAISON, tea) :- maison(MAISON), not aBoisson(MAISON, coffe),not aBoisson(MAISON, milk), not aBoisson(MAISON,og), not aBoisson(MAISON, water).
+aBoisson(MAISON, milk) :- maison(MAISON), not aBoisson(MAISON, tea), not aBoisson(MAISON,coffe),  not aBoisson(MAISON,og), not aBoisson(MAISON, water).
+aBoisson(MAISON, og) :- maison(MAISON), not aBoisson(MAISON, tea), not aBoisson(MAISON, milk), not aBoisson(MAISON, coffe), not aBoisson(MAISON, water).
+aBoisson(MAISON,water) :-  maison(MAISON), not aBoisson(MAISON, tea), not aBoisson(MAISON, milk), not aBoisson(MAISON, coffe), not aBoisson(MAISON, og).
+
+aAnimal(MAISON, dog) :- maison(MAISON), not aAnimal(MAISON, snail), not aAnimal(MAISON, fox), not aAnimal(MAISON,horse), not aAnimal(MAISON, zebra).
+aAnimal(MAISON, snail) :- maison(MAISON), not aAnimal(MAISON, dog),not aAnimal(MAISON, fox), not aAnimal(MAISON,horse), not aAnimal(MAISON, zebra).
+aAnimal(MAISON, fox) :- maison(MAISON), not aAnimal(MAISON, dog), not aAnimal(MAISON,snail),  not aAnimal(MAISON,horse), not aAnimal(MAISON, zebra).
+aAnimal(MAISON, horse) :- maison(MAISON), not aAnimal(MAISON, dog), not aAnimal(MAISON,snail), not aAnimal(MAISON, fox), not aAnimal(MAISON, zebra).
+aAnimal(MAISON,zebra) :-  maison(MAISON),  not aAnimal(MAISON, dog), not aAnimal(MAISON,snail), not aAnimal(MAISON, fox), not aAnimal(MAISON, horse).
+
+aNationalite(MAISON, eng) :- maison(MAISON), not aNationalite(MAISON, spa), not aNationalite(MAISON, ukr), not aNationalite(MAISON,nor), not aNationalite(MAISON, jap).
+aNationalite(MAISON, spa) :- maison(MAISON), not aNationalite(MAISON, eng), not aNationalite(MAISON, ukr), not aNationalite(MAISON,nor), not aNationalite(MAISON, jap).
+aNationalite(MAISON, ukr) :- maison(MAISON), not aNationalite(MAISON, eng), not aNationalite(MAISON,spa),  not aNationalite(MAISON,nor), not aNationalite(MAISON, jap).
+aNationalite(MAISON, nor) :- maison(MAISON), not aNationalite(MAISON, eng), not aNationalite(MAISON,spa), not aNationalite(MAISON, ukr), not aNationalite(MAISON, jap).
+aNationalite(MAISON,jap) :-  maison(MAISON),  not aNationalite(MAISON, eng), not aNationalite(MAISON,spa), not aNationalite(MAISON, ukr), not aNationalite(MAISON, nor).
+
+aMarque(MAISON, old) :- maison(MAISON), not aMarque(MAISON, koo), not aMarque(MAISON, che), not aMarque(MAISON,luc), not aMarque(MAISON, par).
+aMarque(MAISON, koo) :- maison(MAISON), not aMarque(MAISON, old), not aMarque(MAISON, che), not aMarque(MAISON,luc), not aMarque(MAISON, par).
+aMarque(MAISON,che) :- maison(MAISON), not aMarque(MAISON, old), not aMarque(MAISON,koo), not aMarque(MAISON,luc), not aMarque(MAISON, par).
+aMarque(MAISON, luc) :- maison(MAISON), not aMarque(MAISON, old), not aMarque(MAISON,koo), not aMarque(MAISON, che), not aMarque(MAISON, par).
+aMarque(MAISON,par) :-  maison(MAISON),  not aMarque(MAISON, old), not aMarque(MAISON,koo), not aMarque(MAISON, che), not aMarque(MAISON, luc).
+
+aCote(M1,M2) :- maison(M1), maison(M2), (M1-M2)*(M1-M2)==1.
+
+
+
+
+% Lorsque ces règles ont été appliquées, on obtient 5^25 "mondes" !
+
+% 2. Contraintes de différence : on les modélise par des contraintes négatives
+% On élimine tous les mondes dans lesquelles 2 maisons ont une même valeur pour une même propriété
+
+:- aBoisson(MAISON_1, X), aBoisson(MAISON_2, X), MAISON_1 != MAISON_2.
+:- aAnimal(MAISON_1, X), aAnimal(MAISON_2, X), MAISON_1 != MAISON_2.
+:- aNationalite(MAISON_1, X), aNationalite(MAISON_2, X), MAISON_1 != MAISON_2.
+:- aMarque(MAISON_1, X), aMarque(MAISON_2, X), MAISON_1 != MAISON_2.
+:- aCouleur(MAISON_1, X), aCouleur(MAISON_2, X), MAISON_1 != MAISON_2.
+ 
+%3. Contraintes du puzzle
+% Le plus simple est de les modéliser par des contraintes négatives 
+% On supprime encore des mondes : ceux qui ne satisfont pas les contraintes du puzzle
+
+% The Englishman lives in the red house
+:- aCouleur(M1, red), aNationalite(M2, eng), M1 != M2.
+
+% Même principe pour les autres phrases 
+% C'est bien pratique d'ajouter des règles pour définir aDroite(M1,M2), aGauche(M1,M2), aCote(M1,M2) 
+
+% Chaque base de faits saturée qui respecte toutes les contraintes négatives correspond à un modèle de la base de connaissances
+% Mais ici, il n'en existe qu'une. 
+
+
+%The Spaniard owns the dog.
+:- aAnimal(M1,dog), aNationalite(M2,spa), M1!=M2.
+
+%Coffee is drunk in the green house.
+:- aBoisson(M1,coffe), aCouleur(M2,green), M1!=M2.
+
+%The Ukrainian drinks tea
+:- aNationalite(M1,ukr), aBoisson(M2,tea), M1!=M2.
+
+%The green house is immediately to the right of the ivory house.
+:- aCouleur(M1,green), aCouleur(M2,ivory), M2+1!=M1.
+
+%The Old Gold smoker owns snails.
+:- aMarque(M1,old), aAnimal(M2,snail), M1!=M2.
+
+%Kools are smoked in the yellow house.
+:- aMarque(M1,koo), aCouleur(M2,yellow), M1!=M2.
+
+%Milk is drunk in the middle house.
+:- not aBoisson(3,milk).
+
+%The Norwegian lives in the first house
+:- not aNationalite(1,nor).
+
+%The man who smokes Chesterfields lives in the house next to the man with the fox
+:- aMarque(M1,che), aAnimal(M2,fox), not aCote(M1,M2).
+
+%Kools are smoked in the house next to the house where the horse is kept
+:- aMarque(M1,koo), aAnimal(M2,horse), not aCote(M1,M2).
+
+%The Lucky Strike smoker drinks orange juice.
+:- aMarque(M1,luc), aBoisson(M2,og), M1!=M2.
+
+%The Japanese smokes Parliaments.
+:- aMarque(M1,par), aNationalite(M2,jap), M1!=M2.
+
+%The Norwegian lives next to the blue house.
+:- aNationalite(M1,nor), aCouleur(M2,blue), not aCote(M1,M2).
+
+
+
+% Même principe pour les autres phrases 
+% C'est bien pratique d'ajouter des règles pour définir aDroite(M1,M2), aGauche(M1,M2), aCote(M1,M2) 
+
+% Chaque base de faits saturée qui respecte toutes les contraintes négatives correspond à un modèle de la base de connaissances
+% Mais ici, il n'en existe qu'une. 
+
+% 4. Enfin, une règle pour joli affichage des résultats : 
+% Pour une maison X, grouper toutes ses propriétés dans un seul prédicat 
+maison(MAISON, COULEUR, NATIONALITE, BOISSON, ANIMAL, MARQUE) :- maison(MAISON), aCouleur(MAISON,COULEUR), aNationalite(MAISON,NATIONALITE), aBoisson(MAISON,BOISSON), aAnimal(MAISON,ANIMAL), aMarque(MAISON,MARQUE).
+
+
+
+#show maison/6.
+

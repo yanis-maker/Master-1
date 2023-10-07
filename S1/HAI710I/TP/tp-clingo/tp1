@@ -1,0 +1,61 @@
+exo1: 
+% instance
+c.
+b.
+% encoding
+ d :- c.
+ a :- f.
+ x :- e.
+ f :- b.
+ x :- b , not a.
+ 
+ exo2:
+1/ 
+ % instance
+herbivore(chevre).
+humain(rouge).
+
+% encoding
+ animal(X):- herbivore(X).
+ animal(X) :- carnivore(X).
+ carnivore(X):- omnivore(X).
+ herbivore(X):- omnivore(X).
+ omnivore(X) :- herbivore(X), carnivore(X).
+ omnivore(X) :- humain(X).
+ animal(Y) :- carnivore(X),  mange(X,Y).
+ plante(Y) :- carnivore(X),  mange(X,Y).
+ mange(X,Y) :- carnivore(X), herbivore(Y).
+ 
+ 2/% instance
+herbivore(chevre).
+humain(rouge).
+
+% encoding
+ animal(X):- herbivore(X).
+ animal(X) :- carnivore(X).
+ carnivore(X):- omnivore(X).
+ herbivore(X):- omnivore(X).
+ omnivore(X) :- herbivore(X), carnivore(X).
+ omnivore(X) :- humain(X).
+ animal(Y) :- carnivore(X),  mange(X,Y).
+ plante(Y) :- carnivore(X),  mange(X,Y).
+ mange(X,Y) :- carnivore(X), herbivore(Y), X != Y.
+
+4/ clingo dit que la base de connaissance est insatifiable
+ 
+% instance
+herbivore(chevre).
+humain(rouge).
+
+% encoding
+ animal(X):- herbivore(X).
+ animal(X) :- carnivore(X).
+ %carnivore(X):- omnivore(X).
+ %herbivore(X):- omnivore(X).
+ %omnivore(X) :- herbivore(X), carnivore(X).
+ omnivore(X) :- humain(X).
+ animal(X) :- omnivore(X).
+ animal(Y) :- carnivore(X),  mange(X,Y).
+ plante(Y) :- carnivore(X),  mange(X,Y).
+ mange(X,Y) :- carnivore(X), herbivore(Y), X != Y.
+ :- animal(X), plante(X).

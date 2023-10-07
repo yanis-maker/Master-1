@@ -1,0 +1,41 @@
+**Famille d'Oedipe**
+
+A:
+femmeAvecEnfantUnique donne 3 atomes : femmeAvecEnfanUnique(agave) femmeAvecEnfanUnique(nicteis) femmeAvecEnfanUnique(eurydice)
+
+B:
+pasDeuxParentsConnus donne 13 atomes :
+
+pasDeuxParentsConnus(penthe) pasDeuxParentsConnus(cadmos) pasDeuxParentsConnus(oclasos) pasDeuxParentsConnus(menecee) 
+pasDeuxParentsConnus(jocaste) pasDeuxParentsConnus(creon) pasDeuxParentsConnus(laios)
+ pasDeuxParentsConnus(thersandre) pasDeuxParentsConnus(ladamos) pasDeuxParentsConnus(agenor) 
+pasDeuxParentsConnus(harmonie) pasDeuxParentsConnus(nicteis) pasDeuxParentsConnus(eurydice)
+
+C:
+ancetreFemmeAntigone donne 4 atome : 
+ancetreFemmeAntigone(harmonie) ancetreFemmeAntigone(agave) ancetreFemmeAntigone(nicteis) ancetreFemmeAntigone(jocaste)
+
+D:
+Les plus proches ancêtres commun de Oclasos et Laios : Cadmos, Harmonie
+Les plus proches ancêtres commun de Oclasos et Oedipe : Cadmos, Harmonie, Penthe
+
+**Coloration**
+
+E: On obtient 54 solutions.
+
+F: On doit ajouter la condition suivante : color(wa,r):- .
+On obtient alors 18 solutions
+
+G:En gardant la meme base des faits, on ajoute une règle pour que la carte d'australie soit 2-colorable et c'est celle ci : :- color(X,b), node(X).
+Le résultat obtenue est Insatisfiable donc la carte d'australie n'est pas 2-colorable .
+
+H:Pour faire cela nous allons ajouter une nouvelle couleur a la base des faits couleu(grey), ensuite nous allons ajouter une règle pour dire que sa doit être en gris,
+voici donc la règle en question :color(sa,grey):- . 
+On indique ensuite que les autres noeuds doivent prendre la couleur rouge ou vert avec cette règle : :- color(X,b), node(X).
+On obtient alors deux solutions : 
+
+
+**Puzzle du zebre**
+K. J'ai réussi à modéliser le puzzle du zebre, voila la première solution trouvée :
+
+maison(1,yellow,nor,water,fox,koo) maison(2,blue,ukr,tea,horse,che) maison(3,red,eng,milk,snail,old) maison(4,ivory,spa,og,dog,luc) maison(5,green,jap,coffe,zebra,par)

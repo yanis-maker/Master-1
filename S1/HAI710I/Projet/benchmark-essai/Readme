@@ -1,0 +1,7 @@
+--La dureté d'une contrainte = Le rapport entre le nombre de tuples interdits de la contrainte et le nombre total des tuples de la contrainte
+
+--Le nombre total des tuples d'une contrainte = produit des tailles des domaines. (Dans notre cas les domaines auront tous la même taille).
+
+--Le nombre de tuples interdits d'une contrainte =  produit des tailles des domaines - nombre total de tuple de la contrainte
+
+--Exécution de urbcsp : ./urbcsp nb_variables nb_valeurs(taille_domaine) nb_contraintes nb_tuples_dans_chaque_contraintes nb_reseaux
