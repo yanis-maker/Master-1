@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:music="http://www.kanzaki.com/ns/music#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:schema="http://schema.org/">
+
+
+    <foaf:Person rdf:about="http://example.com/mozart">
+        <foaf:name>Wolfgang Amadeus Mozart</foaf:name>
+        <foaf:birthday>1756-01-27</foaf:birthday>
+        <foaf:deathday>1791-12-05</foaf:deathday>
+        <foaf:birthplace>Salzbourg</foaf:birthplace>
+        <foaf:deathplace>Vienne</foaf:deathplace>
+        <foaf:father rdf:resource="http://example.com/leopoldMozart"/>
+        <foaf:spouse rdf:resource="http://example.com/constanceWeber"/>
+        <rdf:type rdf:resource="http://www.kanzaki.com/ns/music#Composer"/>
+    </foaf:Person>
+
+    <foaf:Person rdf:about="http://example.com/leopoldMozart">
+        <foaf:name>Leopold Mozart</foaf:name>
+    </foaf:Person>
+
+    <foaf:Person rdf:about="http://example.com/constanceWeber">
+        <foaf:name>Constance Weber</foaf:name>
+    </foaf:Person>
+
+    <music:Opera rdf:about="http://example.com/la_flute_enchantee">
+        <music:title>La flute enchantée</music:title>
+        <music:composer rdf:resource="http://example.com/mozart"/>
+    </music:Opera>
+
+    <music:Symphony rdf:about="http://example.com/jupiter">
+        <rdfs:label>41 Symphonie en ut majeu Jupiter</rdfs:label>
+        <music:recordedBy rdf:resource="http://example.com/orchLondre"/>
+        <music:recordyear>1980</music:recordyear>
+        <music:composer rdf:resource="http://example.com/mozart"/>
+    </music:Symphony>
+
+    <music:Orchestra rdf:about="http://example.com/orchLondre">
+        <schema:name>Orchestre Symphonique de Londre</schema:name>
+        <schema:location>Londre</schema:location>
+        <music:conductor rdf:resource="http://example.com/abbado"/>
+    </music:Orchestra>
+
+    <foaf:Person rdf:about="http://example.com/abbado">
+        <foaf:name>Claudio Abbado</foaf:name>
+        <rdf:type rdf:resource ="http://www.kanzaki.com/ns/music#Conductor"/>
+    </foaf:Person>
+
+    <music:Movement rdf:about="http://example.com/allegro">
+        <music:title>Allegro Vivace</music:title>
+        <music:partOf rdf:resource="http://example.com/jupiter"/>
+    </music:Movement>
+
+    <music:Movement rdf:about="http://example.com/andante">
+        <music:title>Andante Cantabile</music:title>
+        <music:partOf rdf:resource="http://example.com/jupiter"/>
+    </music:Movement>
+
+    <music:Movement rdf:about="http://example.com/menuetto">
+        <music:title>Menuetto</music:title>
+        <music:partOf rdf:resource="http://example.com/jupiter"/>
+    </music:Movement>
+
+    <music:Movement rdf:about="http://example.com/molto">
+        <music:title>Molto Allegro</music:title>
+        <music:partOf rdf:resource="http://example.com/jupiter"/>
+    </music:Movement>
+
+

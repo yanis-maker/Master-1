@@ -1,0 +1,107 @@
+{
+    "@graph": [
+        {
+            "@id": "http://example.com/mozart",
+            "foaf:name": "Wolfgang Amadeus Mozart",
+            "foaf:birthday": "1756-01-27",
+            "foaf:deathday": "1791-12-05",
+            "foaf:birthplace": "Salzbourg",
+            "foaf:deathplace": "Vienne",
+            "foaf:father": {
+                "@id": "http://example.com/leopoldMozart"
+            },
+            "foaf:spouse": {
+                "@id": "http://example.com/constanceWeber"
+            },
+            "@type": [
+                "foaf:Person",
+                "music:Composer"
+            ]
+        },
+        {
+            "@id": "http://example.com/leopoldMozart",
+            "foaf:name": "Leopold Mozart",
+            "@type": "foaf:Person"
+        },
+        {
+            "@id": "http://example.com/constanceWeber",
+            "foaf:name": "Constance Weber",
+            "@type": "foaf:Person"
+        },
+        {
+            "@id": "http://example.com/menuetto",
+            "music:title": "Menuetto",
+            "music:partOf": {
+                "@id": "http://example.com/jupiter"
+            },
+            "@type": "music:Movement"
+        },
+        {
+            "@id": "http://example.com/jupiter",
+            "music:composer": {
+                "@id": "http://example.com/mozart"
+            },
+            "music:recordyear": "1980",
+            "music:recordedBy": {
+                "@id": "http://example.com/orchLondre"
+            },
+            "rdfs:label": "41 Symphonie en ut majeu Jupiter",
+            "@type": "music:Symphony"
+        },
+        {
+            "@id": "http://example.com/la_flute_enchantee",
+            "music:title": "La flute enchantée",
+            "music:composer": {
+                "@id": "http://example.com/mozart"
+            },
+            "@type": "music:Opera"
+        },
+        {
+            "@id": "http://example.com/allegro",
+            "music:title": "Allegro Vivace",
+            "music:partOf": {
+                "@id": "http://example.com/jupiter"
+            },
+            "@type": "music:Movement"
+        },
+        {
+            "@id": "http://example.com/molto",
+            "music:title": "Molto",
+            "music:partOf": {
+                "@id": "http://example.com/jupiter"
+            },
+            "@type": "music:Movement"
+        },
+        {
+            "@id": "http://example.com/orchLondre",
+            "schema:name": "Orchestre Symphonique de Londre",
+            "schema:location": "Londre",
+            "music:conductor": {
+                "@id": "http://example.com/abbado"
+            },
+            "@type": "music:Orchestra"
+        },
+        {
+            "@id": "http://example.com/abbado",
+            "foaf:name": "Claudio Abbado",
+            "@type": [
+                "foaf:Person",
+                "music:Conductor"
+            ]
+        },
+        {
+            "@id": "http://example.com/andante",
+            "music:title": "Andante Cantabile",
+            "music:partOf": {
+                "@id": "http://example.com/jupiter"
+            },
+            "@type": "music:Movement"
+        }
+    ],
+    "@context": {
+        "schema": "http://schema.org/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "music": "http://www.kanzaki.com/ns/music#",
+        "foaf": "http://xmlns.com/foaf/0.1/"
+    }
+}

@@ -1,0 +1,40 @@
+<http://example.com/mozart> <http://xmlns.com/foaf/0.1/name> "Wolfgang Amadeus Mozart" .
+<http://example.com/mozart> <http://xmlns.com/foaf/0.1/birthday> "1756-01-27" .
+<http://example.com/mozart> <http://xmlns.com/foaf/0.1/deathday> "1791-12-05" .
+<http://example.com/mozart> <http://xmlns.com/foaf/0.1/birthplace> "Salzbourg" .
+<http://example.com/mozart> <http://xmlns.com/foaf/0.1/deathplace> "Vienne" .
+<http://example.com/mozart> <http://xmlns.com/foaf/0.1/father> <http://example.com/leopoldMozart> .
+<http://example.com/mozart> <http://xmlns.com/foaf/0.1/spouse> <http://example.com/constanceWeber> .
+<http://example.com/mozart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.com/mozart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.kanzaki.com/ns/music#Composer> .
+<http://example.com/menuetto> <http://www.kanzaki.com/ns/music#title> "Menuetto" .
+<http://example.com/menuetto> <http://www.kanzaki.com/ns/music#partOf> <http://example.com/jupiter> .
+<http://example.com/menuetto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.kanzaki.com/ns/music#Movement> .
+<http://example.com/la_flute_enchantee> <http://www.kanzaki.com/ns/music#title> "La flute enchantée" .
+<http://example.com/la_flute_enchantee> <http://www.kanzaki.com/ns/music#composer> <http://example.com/mozart> .
+<http://example.com/la_flute_enchantee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.kanzaki.com/ns/music#Opera> .
+<http://example.com/allegro> <http://www.kanzaki.com/ns/music#title> "Allegro Vivace" .
+<http://example.com/allegro> <http://www.kanzaki.com/ns/music#partOf> <http://example.com/jupiter> .
+<http://example.com/allegro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.kanzaki.com/ns/music#Movement> .
+<http://example.com/molto> <http://www.kanzaki.com/ns/music#title> "Molto" .
+<http://example.com/molto> <http://www.kanzaki.com/ns/music#partOf> <http://example.com/jupiter> .
+<http://example.com/molto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.kanzaki.com/ns/music#Movement> .
+<http://example.com/jupiter> <http://www.kanzaki.com/ns/music#composer> <http://example.com/mozart> .
+<http://example.com/jupiter> <http://www.kanzaki.com/ns/music#recordyear> "1980" .
+<http://example.com/jupiter> <http://www.kanzaki.com/ns/music#recordedBy> <http://example.com/orchLondre> .
+<http://example.com/jupiter> <http://www.w3.org/2000/01/rdf-schema#label> "41 Symphonie en ut majeu Jupiter" .
+<http://example.com/jupiter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.kanzaki.com/ns/music#Symphony> .
+<http://example.com/leopoldMozart> <http://xmlns.com/foaf/0.1/name> "Leopold Mozart" .
+<http://example.com/leopoldMozart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.com/constanceWeber> <http://xmlns.com/foaf/0.1/name> "Constance Weber" .
+<http://example.com/constanceWeber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.com/abbado> <http://xmlns.com/foaf/0.1/name> "Claudio Abbado" .
+<http://example.com/abbado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://example.com/abbado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.kanzaki.com/ns/music#Conductor> .
+<http://example.com/andante> <http://www.kanzaki.com/ns/music#title> "Andante Cantabile" .
+<http://example.com/andante> <http://www.kanzaki.com/ns/music#partOf> <http://example.com/jupiter> .
+<http://example.com/andante> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.kanzaki.com/ns/music#Movement> .
+<http://example.com/orchLondre> <http://schema.org/name> "Orchestre Symphonique de Londre" .
+<http://example.com/orchLondre> <http://schema.org/location> "Londre" .
+<http://example.com/orchLondre> <http://www.kanzaki.com/ns/music#conductor> <http://example.com/abbado> .
+<http://example.com/orchLondre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.kanzaki.com/ns/music#Orchestra> .

@@ -1,0 +1,64 @@
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix music:  <http://www.kanzaki.com/ns/music#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+
+<http://example.com/mozart>
+        a                foaf:Person , music:Composer ;
+        foaf:birthday    "1756-01-27" ;
+        foaf:birthplace  "Salzbourg" ;
+        foaf:deathday    "1791-12-05" ;
+        foaf:deathplace  "Vienne" ;
+        foaf:father      <http://example.com/leopoldMozart> ;
+        foaf:name        "Wolfgang Amadeus Mozart" ;
+        foaf:spouse      <http://example.com/constanceWeber> .
+
+<http://example.com/menuetto>
+        a             music:Movement ;
+        music:partOf  <http://example.com/jupiter> ;
+        music:title   "Menuetto" .
+
+<http://example.com/la_flute_enchantee>
+        a               music:Opera ;
+        music:composer  <http://example.com/mozart> ;
+        music:title     "La flute enchantée" .
+
+<http://example.com/allegro>
+        a             music:Movement ;
+        music:partOf  <http://example.com/jupiter> ;
+        music:title   "Allegro Vivace" .
+
+<http://example.com/molto>
+        a             music:Movement ;
+        music:partOf  <http://example.com/jupiter> ;
+        music:title   "Molto" .
+
+<http://example.com/jupiter>
+        a                 music:Symphony ;
+        rdfs:label        "41 Symphonie en ut majeu Jupiter" ;
+        music:composer    <http://example.com/mozart> ;
+        music:recordedBy  <http://example.com/orchLondre> ;
+        music:recordyear  "1980" .
+
+<http://example.com/leopoldMozart>
+        a          foaf:Person ;
+        foaf:name  "Leopold Mozart" .
+
+<http://example.com/constanceWeber>
+        a          foaf:Person ;
+        foaf:name  "Constance Weber" .
+
+<http://example.com/abbado>
+        a          foaf:Person , music:Conductor ;
+        foaf:name  "Claudio Abbado" .
+
+<http://example.com/andante>
+        a             music:Movement ;
+        music:partOf  <http://example.com/jupiter> ;
+        music:title   "Andante Cantabile" .
+
+<http://example.com/orchLondre>
+        a                music:Orchestra ;
+        schema:location  "Londre" ;
+        schema:name      "Orchestre Symphonique de Londre" ;
+        music:conductor  <http://example.com/abbado> .
