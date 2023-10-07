@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Application Test</string>
+    <string name="name">Name: </string>
+    <string name="age">Age: </string>
+    <string name="surname">First name: </string>
+    <string name="skills">Skills Area: </string>
+    <string name="phone">Name: </string>
+
+    <string name="hintName">Please enter your name</string>
+    <string name="hintSurname">Please enter your surname</string>
+    <string name="hintSkills">Please enter your skills area</string>
+    <string name="hintPhone">Please enter your phone number</string>
+    <string name="hintAge">Please enter your age</string>
+
+    <string name="submit">Submit</string>
+    <string name="dialogTitle">Confirm Submition</string>
+    <string name="dialogQuestion">Are you sure you want to submit ?</string>
+    <string name="dialogPositive">Confirm</string>
+    <string name="dialogNegative">Abord</string>
+    <string name="dialogSucces">Submition confirmed!! </string>
+    <string name="dialogError">Please fill all field</string>
+
+    <string name="returnButton">Return</string>
+
+    <string name="callButton">Call</string>
+</resources>

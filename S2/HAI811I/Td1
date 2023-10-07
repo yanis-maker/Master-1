@@ -1,0 +1,20 @@
+
+public	class HelloAndroid	extends	Activity {
+    @Override
+    public	void	onCreate(Bundle	savedInstanceState)	{
+        super.onCreate(savedInstanceState);
+        TextView	tv	=	new	TextView(this);
+        tv.setText("Hello,	Android");
+
+        EditText et= newEditText(this);
+
+        LinearLayout li=new LinearLayout(this);
+
+        li.setOrientation(LinearLayout.VERTICAL);
+
+        li.add(tv);
+        li.add(et);
+
+        setContentView(li);
+    }
+}

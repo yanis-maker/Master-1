@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "4c4aabe6d9bbffd3",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8f532a42fe01273",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b3a4ca9680e3b8e4",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "7b17faa0f07019df",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "7a519d7435b96d86",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "178bace811f0665c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "9703bd89cedd890f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.4"
+              }
+            }
+          },
+          {
+            "id": "56e96e31e9c835b0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.5"
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1a544cb2fda54e4d",
+    "type": "split",
+    "children": [
+      {
+        "id": "b54c837e3b86c7fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2c60dd9dcd544859",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "1d5551484baa57d7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "714cbb72447e714c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "9343df1ed47b3852",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "97fefaba964abb66",
+    "type": "split",
+    "children": [
+      {
+        "id": "f428f4025bd9110a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8e9f7648e1e989b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "25ac6026baac9b7d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c0e361ff19ea1ef0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6b7de6133a30cf74",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:Créer une nouvelle toile": false,
+      "switcher:Ouvrir le sélecteur rapide": false,
+      "graph:Ouvrir la vue graphique": false,
+      "daily-notes:Ouvrir la note quotidienne": false,
+      "templates:Insérer le modèle": false,
+      "command-palette:Ouvrir la palette de commandes": false
+    }
+  },
+  "active": "56e96e31e9c835b0",
+  "lastOpenFiles": [
+    "Sans titre.canvas",
+    "Stage/healthcareclusteringqualitop-final/RobustWeightedKMeans_7clusters.ipynb",
+    "Stage/healthcareclusteringqualitop-final/README.md",
+    "Stage/healthcareclusteringqualitop-final/Qualitop_QOL.docx",
+    "Stage/healthcareclusteringqualitop-final/QOL_prepro.ipynb",
+    "Stage/healthcareclusteringqualitop-final/multiple_algo_test.ipynb",
+    "Stage/healthcareclusteringqualitop-final/methodo.docx",
+    "Stage/healthcareclusteringqualitop-final/immucare_2_fiche_inclusion.csv",
+    "Stage/healthcareclusteringqualitop-final/08092022_DonneesQualitop_QoL.XLSX",
+    "Stage/healthcareclusteringqualitop-devVD/Victor/QUALITOP/script_consensusclustering.py",
+    "Stage/healthcareclusteringqualitop-devVD/Victor/QUALITOP/viz.py",
+    "Stage/healthcareclusteringqualitop-devVD/Victor/QUALITOP/qualitop_demo_other_algo.ipynb",
+    "Stage/healthcareclusteringqualitop-devVD/Victor/PIMA/tree.png",
+    "Stage/healthcareclusteringqualitop-devVD/Victor/PIMA/data_viz.png",
+    "Stage/healthcareclusteringqualitop-devVD/Victor/PIMA/data_viz_norm.png",
+    "Stage/healthcareclusteringqualitop-devVD/README.md",
+    "Stage/healthcareclusteringqualitop-final/healthcareclusteringqualitop-final/README.md",
+    "Stage/healthcareclusteringqualitop-devVD/healthcareclusteringqualitop-devVD/Victor/PIMA/data_viz_norm.png",
+    "Stage/healthcareclusteringqualitop-devVD/healthcareclusteringqualitop-devVD/Victor/PIMA/data_viz.png",
+    "Stage/healthcareclusteringqualitop-devVD/healthcareclusteringqualitop-devVD/README.md",
+    "Stage/salient.png",
+    "Stage/cohesion.png",
+    "Stage/WCSS.png",
+    "Stage/itération.png",
+    "Stage/points.png",
+    "Stage/Statistics.md",
+    "Stage/Recherche.md",
+    "2023-05-07.md",
+    "TER/Questions.md",
+    "TER/Notes.md",
+    "TER/Résultat_recherche.md",
+    "HAI815I/Projet-HAI815I/readme.md",
+    "TER/Glossaire.md",
+    "HAI824I/Traduction logique de RDFS.md",
+    "HAI811I/TD1.md",
+    "HAI824I/Semantic_Web.md"
+  ]
+}

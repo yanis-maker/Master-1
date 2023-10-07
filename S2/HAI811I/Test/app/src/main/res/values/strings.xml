@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Mon Application Test</string>
+
+    <string name="name">Nom: </string>
+    <string name="surname">Prenom: </string>
+    <string name="age">Age: </string>
+    <string name="skills">Domaine de competence: </string>
+    <string name="phone">Numero de telephone: </string>
+
+    <string name="hintName">Veuillez saisir votre nom : </string>
+    <string name="hintSurname">Veuillez saisir votre prenom</string>
+    <string name="hintSkills">Veuillez saisir votre domaine de compétence</string>
+    <string name="hintPhone">Veuillez saisir votre numéro de téléphone</string>
+    <string name="hintAge">Veuillez saisir votr âge</string>
+
+    <string name="submit">Envoyer</string>
+    <string name="dialogTitle">Confirmer l envoie</string>
+    <string name="dialogQuestion">Etes vous sur de confirmer ?</string>
+    <string name="dialogPositive">Confirmer</string>
+    <string name="dialogNegative">Annuler</string>
+    <string name="dialogSucces">Envoie confirme !!</string>
+    <string name="dialogError">Veuillez remplir tout les champs</string>
+
+    <string name="returnButton">Retour</string>
+
+    <string name="callButton">Appeler</string>
+</resources>
