@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="be2c9fde-4101-4e8f-af3b-60fa5f009b95" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/plugindev/ManifestChangeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/plugindev/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HAI811I/ApplicationTrain/app/src/main/java/com/example/applicationtrain/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HAI811I/ApplicationTrain/app/src/main/java/com/example/applicationtrain/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HAI811I/Test/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../HAI811I/Test/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HAI824I/TP1_BOUALLOUCHE_YANIS/pt1_jena/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../../HAI824I/TP1_BOUALLOUCHE_YANIS/pt1_jena/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HAI824I/TP1_BOUALLOUCHE_YANIS/pt1_jena/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../../HAI824I/TP1_BOUALLOUCHE_YANIS/pt1_jena/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HAI824I/TP1_BOUALLOUCHE_YANIS/pt1_jena/bin/pt1_jena/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../HAI824I/TP1_BOUALLOUCHE_YANIS/pt1_jena/bin/pt1_jena/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HAI824I/TP1_BOUALLOUCHE_YANIS/pt1_jena/src/pt1_jena/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HAI824I/TP1_BOUALLOUCHE_YANIS/pt1_jena/src/pt1_jena/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Run IDE with Plugin.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.run/Run IDE with Plugin.run.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/plugindev/MyBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/plugindev/MyDocumentListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/plugindev/MyProjectListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Résultat_recherche.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Résultat_recherche.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestProject/src/main/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TestProject/src/main/java/TestClass.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation>
+            <after_sync>
+              <task name="setupDependencies" />
+            </after_sync>
+          </activation>
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PluginDev" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PluginDev" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MBzYMTqPwQXPkSkskMZJrOWWou" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Yanis Bouallouche/Documents/GitHub/TER--Environnement-Intelligent-pour-la-R-solution-des-Erreurs-li-es-aux-Environnements-de-Programma/PluginDev",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RunManager" selected="Gradle.Run Plugin">
+    <configuration name="Run" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -ea" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.Run Plugin" />
+      <item itemvalue="Plugin.Run" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be2c9fde-4101-4e8f-af3b-60fa5f009b95" name="Changes" comment="" />
+      <created>1677255819202</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677255819202</updated>
+      <workItem from="1677255825707" duration="201000" />
+      <workItem from="1677256067183" duration="3893000" />
+      <workItem from="1677501037925" duration="98000" />
+      <workItem from="1677588318863" duration="4569000" />
+      <workItem from="1677676708254" duration="2715000" />
+      <workItem from="1677764546947" duration="4129000" />
+      <workItem from="1677769641099" duration="2926000" />
+      <workItem from="1677773135259" duration="493000" />
+      <workItem from="1677773645230" duration="39000" />
+      <workItem from="1677773708726" duration="920000" />
+      <workItem from="1677776632316" duration="53000" />
+      <workItem from="1677776693659" duration="239000" />
+      <workItem from="1677776949677" duration="4451000" />
+      <workItem from="1677857715532" duration="34000" />
+      <workItem from="1678100391243" duration="87000" />
+      <workItem from="1678110201728" duration="4114000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
